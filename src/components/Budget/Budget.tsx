@@ -13,7 +13,7 @@ export function Budget() {
             className="md:rounded-sm font-bold mr-1 px-8 border dark:border-zinc-600 w-full md:w-auto"
             type="submit"
           >
-            Buy
+            Buy ware
           </Button>
           <Button
             lg
@@ -21,7 +21,7 @@ export function Budget() {
             type="submit"
             disabled
           >
-            Sell
+            Sell ware
           </Button>
         </div>
         <div className="md:flex">
@@ -52,14 +52,17 @@ export function Budget() {
             full
           />
         </div>
-        <Button
-          primary
-          xl
-          className="rounded-[1px] md:rounded-sm mt-3 font-bold"
-          type="submit"
-        >
-          Find your HotelWare
-        </Button>
+        <div className='md:mr-2'>
+          <Button
+            primary
+            xl
+            className="rounded-none mt-3 font-bold"
+            type="submit"
+            full
+          >
+            Find your HotelWare
+          </Button>
+        </div>
       </form>
       <div className="w-full bg-gray-100 dark:bg-zinc-800 my-6 md:my-0 flex items-center justify-center">
         {/* <h1>budget calculator sell or buy</h1> */}

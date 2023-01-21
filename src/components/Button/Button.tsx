@@ -44,7 +44,7 @@ export const Button = ({
         sm ? 'px-3 py-2 leading-4 rounded-md' : '',
         lg ? 'px-4 py-2 text-base rounded-none' : '',
         xl ? 'px-8 py-4 text-base' : '',
-        primary ? 'bg-[#ff3b5c] text-white' : '',
+        primary ? 'bg-yellow-500 dark:bg-yellow-600' : '', //'bg-[#ff3b5c] text-white' : '',
         transparent
           ? 'border-gray-300 text-gray-700 bg-white' +
               ' hover:bg-gray-50 ripple-on-surface'

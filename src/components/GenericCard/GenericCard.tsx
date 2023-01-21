@@ -4,11 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
-
 // import required modules
 import { Autoplay, Pagination } from 'swiper'
 import Image from 'next/image'
-import Link from 'next/link'
 import { HomeWareItems } from '@/mock'
 
 export function GenericCard() {
@@ -51,7 +49,9 @@ export function GenericCard() {
                     height={300}
                     src={item.image}
                     alt={item.name}
-                    className={'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-md'}
+                    className={
+                      'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-md'
+                    }
                   />
                   <div className="p-3 flex justify-between items-center">
                     <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold">
@@ -59,6 +59,9 @@ export function GenericCard() {
                     </h1>
                     <button className="border border-gray-400 py-1 px-4 rounded text-sm">
                       WhatsApp
+                    </button>
+                    <button className="font-bold absolute right-1 bottom-[100px] md:bottom-[115px] bg-yellow-600 overflow-hidden z-10 rounded px-1 text-sm">
+                      Rs 70,000
                     </button>
                   </div>
                 </div>
