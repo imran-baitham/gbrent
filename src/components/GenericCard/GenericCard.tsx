@@ -11,15 +11,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { HomeWareItems } from '@/mock'
 
-export function Slider() {
+export function GenericCard() {
   return (
     <div className="py-7 md:py-10">
       <div className="container_main">
         <Swiper
-          slidesPerView={6}
+          slidesPerView={4}
           spaceBetween={10}
           autoplay={{
-            delay: 4000,
+            delay: 6000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -31,39 +31,35 @@ export function Slider() {
           loopFillGroupWithBlank={true}
           breakpoints={{
             '@0.00': {
-              slidesPerView: 3,
+              slidesPerView: 1,
             },
             '@0.75': {
-              slidesPerView: 4,
+              slidesPerView: 2,
             },
             '@1.00': {
-              slidesPerView: 5,
-            },
-            '@1.50': {
-              slidesPerView: 6,
-              spaceBetween: 20,
+              slidesPerView: 4,
+              spaceBetween: 10,
             },
           }}
         >
           {HomeWareItems.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div>
-                  <div className="mb-7 md:mb-14 rounded-sm">
-                    <Image
-                      width={220}
-                      height={200}
-                      src={item.image}
-                      alt={item.name}
-                      className={'border-2 border-gray-100 dark:border-black'}
-                    />
-                    <Link href={item.url}>
-                      <div className="py-2">
-                        <h1 className="rounded-sm uppercase text-[12px] md:text-[14px] font-bold">
-                          {item.name}
-                        </h1>
-                      </div>
-                    </Link>
+                <div className="mb-10 md:mb-14 rounded-sm bg-gray-100 dark:bg-zinc-800">
+                  <Image
+                    width={600}
+                    height={300}
+                    src={item.image}
+                    alt={item.name}
+                    className={'border-2 border-gray-100 dark:border-black'}
+                  />
+                  <div className="p-3 flex justify-between items-center">
+                    <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold">
+                      {item.name}
+                    </h1>
+                    <button className="border border-gray-400 py-1 px-4 rounded text-sm">
+                      WhatsApp
+                    </button>
                   </div>
                 </div>
               </SwiperSlide>
