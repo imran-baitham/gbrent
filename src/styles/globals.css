@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #__next {
+    @apply contents;
+  }
+
+  html {
+    @apply h-full scroll-smooth antialiased;
+  }
+
+  body {
+    @apply flex h-full flex-col;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  .section {
+    @apply py-24;
+  }
+
+  .container_div {
+    @apply max-w-[1200px] m-auto ml-[1rem] mr-[1rem]
+  }
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s;
+}
+
+.container_main {
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0% auto;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ca8a04 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ca8a04 !important;
+}
+
+.swiper-button-prev {
+  background-color: red !important;
+  padding: 30px !important;
+  font-size: small !important;
+  border-radius: 50% !important;
+  color: #ca8a04 !important;
+}
+
+.swiper-button-next {
+  color: #ca8a04 !important;
+}
+.dots {
+  background-color: red;
+}
