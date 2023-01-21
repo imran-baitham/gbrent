@@ -56,7 +56,7 @@ export function Budget() {
           <Button
             primary
             xl
-            className="mt-3 font-bold py-[14px]"
+            className="mt-3 font-bold py-[13.5px]"
             type="submit"
             full
           >
