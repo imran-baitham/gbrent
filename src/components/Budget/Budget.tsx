@@ -5,9 +5,25 @@ import HotelImage from '../../../public/assets/hotelware-graphic1.svg'
 
 export function Budget() {
   return (
-    <div className="grid md:grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2">
       <form action="##" className="w-full">
-        <h1 className="font-bold text-2xl pb-4 text-yellow-600 dark:text-yellow-500">Budget Sell or Buy</h1>
+        <div className="flex mb-4">
+          <Button
+            lg
+            className="md:rounded-sm font-bold mr-1 px-8 border dark:border-zinc-600 w-full md:w-auto"
+            type="submit"
+          >
+            Buy
+          </Button>
+          <Button
+            lg
+            className="md:rounded-sm font-bold px-8 border dark:border-zinc-600 w-full md:w-auto"
+            type="submit"
+            disabled
+          >
+            Sell
+          </Button>
+        </div>
         <div className="md:flex">
           <TextField
             label="What are you buying?"
@@ -39,7 +55,7 @@ export function Budget() {
         <Button
           primary
           xl
-          className="rounded-[2px] md:rounded-sm mt-3 font-bold"
+          className="rounded-[1px] md:rounded-sm mt-3 font-bold"
           type="submit"
         >
           Find your HotelWare

@@ -35,7 +35,7 @@ export function TextField({
   return (
     <div
       className={classNames(
-        'py-2 mr-2 w-auto h-auto',
+        'py-2 md:mr-2 w-auto h-auto',
         full ? 'w-full' : '',
         isDisabled ? isDisabled : '',
       )}
