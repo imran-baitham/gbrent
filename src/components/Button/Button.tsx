@@ -37,12 +37,12 @@ export const Button = ({
       className={classNames(
         'cursor-pointer px-3 py-2',
         'inline-flex items-center',
-        'text-sm font-medium rounded-md shadow-sm ',
+        'text-sm font-medium shadow-sm rounded-none md:rounded-[1px]',
         'flex justify-center',
         full ? 'w-full' : '',
-        xs ? 'px-2.5 py-1.5 text-xs rounded' : '',
-        sm ? 'px-3 py-2 leading-4 rounded-md' : '',
-        lg ? 'px-4 py-2 text-base rounded-none' : '',
+        xs ? 'px-2.5 py-1.5 text-xs' : '',
+        sm ? 'px-3 py-2 leading-4' : '',
+        lg ? 'px-4 py-2 text-base' : '',
         xl ? 'px-8 py-4 text-base' : '',
         primary ? 'bg-yellow-500 dark:bg-yellow-600' : '', //'bg-[#ff3b5c] text-white' : '',
         transparent

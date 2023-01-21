@@ -10,14 +10,14 @@ export function Budget() {
         <div className="flex mb-4">
           <Button
             lg
-            className="md:rounded-sm font-bold mr-1 px-8 border dark:border-zinc-600 w-full md:w-auto"
+            className="font-bold mr-1 px-8 border dark:border-zinc-600 w-full md:w-auto"
             type="submit"
           >
             Buy ware
           </Button>
           <Button
             lg
-            className="md:rounded-sm font-bold px-8 border dark:border-zinc-600 w-full md:w-auto"
+            className="font-bold px-8 border dark:border-zinc-600 w-full md:w-auto"
             type="submit"
             disabled
           >
@@ -56,7 +56,7 @@ export function Budget() {
           <Button
             primary
             xl
-            className="rounded-none mt-3 font-bold"
+            className="mt-3 font-bold py-[14px]"
             type="submit"
             full
           >
