@@ -33,11 +33,11 @@ export function Budget() {
             full
           />
         </div>
-        <Button primary xl className="rounded-sm mt-3 font-bold" type="submit">
+        <Button primary xl className="rounded-[2px] md:rounded-sm mt-3 font-bold" type="submit">
           Find your HotelWare
         </Button>
       </form>
-      <div className="w-full bg-red-50">
+      <div className="w-full bg-red-50 my-6 md:my-0">
         <h1>budget calculator sell or buy</h1>
       </div>
     </div>

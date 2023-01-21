@@ -13,7 +13,7 @@ import { HomeWareItems } from '@/mock'
 
 export function Slider() {
   return (
-    <div className="py-10">
+    <div className="py-7 md:py-10">
       <div className="container_main">
         <Swiper
           slidesPerView={6}
@@ -49,7 +49,7 @@ export function Slider() {
             return (
               <SwiperSlide key={index}>
                 <div>
-                  <div className="mb-14 rounded-sm">
+                  <div className="mb-7 md:mb-14 rounded-sm">
                     <Image
                       width={220}
                       height={200}
