@@ -17,7 +17,7 @@ export function Slider() {
       <div className="container_main">
         <Swiper
           slidesPerView={6}
-          spaceBetween={10}
+          spaceBetween={7}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
@@ -41,7 +41,7 @@ export function Slider() {
             },
             '@1.50': {
               slidesPerView: 6,
-              spaceBetween: 20,
+              spaceBetween: 15,
             },
           }}
         >

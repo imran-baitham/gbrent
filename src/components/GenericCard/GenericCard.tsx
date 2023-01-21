@@ -45,13 +45,13 @@ export function GenericCard() {
           {HomeWareItems.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="mb-10 md:mb-14 rounded-sm bg-gray-100 dark:bg-zinc-800">
+                <div className="mb-10 md:mb-14 rounded-md bg-gray-100 dark:bg-zinc-800">
                   <Image
                     width={600}
                     height={300}
                     src={item.image}
                     alt={item.name}
-                    className={'border-2 border-gray-100 dark:border-black'}
+                    className={'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-md'}
                   />
                   <div className="p-3 flex justify-between items-center">
                     <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold">

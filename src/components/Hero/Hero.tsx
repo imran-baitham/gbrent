@@ -65,7 +65,11 @@ export function Hero() {
                     theme === 'dark' ? 'rgba(0,0,0,0.7)' : 'rgba(0,0,0,0.4)', //'rgba(255,25,25,0.9)',
                 }}
               >
-                <div>future text</div>
+                <div className="w-full h-full flex items-center justify-center">
+                  <h1 className="text-xl md:text-4xl text-white font-bold">
+                    E2E - HotelWare
+                  </h1>
+                </div>
               </div>
             </SwiperSlide>
           )
