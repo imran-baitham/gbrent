@@ -60,7 +60,7 @@ export function GenericCard() {
                     <button className="border border-gray-400 py-1 px-4 rounded text-sm">
                       WhatsApp
                     </button>
-                    <button className="font-bold absolute right-1 bottom-[100px] md:bottom-[115px] bg-yellow-600 overflow-hidden z-10 rounded px-1 text-sm">
+                    <button className="font-bold absolute right-1 bottom-[100px] md:bottom-[115px] bg-yellow-600 text-white overflow-hidden z-10 rounded px-1 text-sm">
                       Rs 70,000
                     </button>
                   </div>

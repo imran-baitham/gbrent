@@ -1,4 +1,4 @@
-import { Budget, GenericCard, Hero, Slider } from '@/components'
+import { Budget, GenericCard, Hero, SiderCard, Slider } from '@/components'
 import Head from 'next/head'
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
           <Budget />
         </div>
         <GenericCard />
+        <SiderCard />
         <div className="h-[300px] w-full bg-yellow-200 flex items-center justify-center">
           Facbook Card Sliders 02
         </div>

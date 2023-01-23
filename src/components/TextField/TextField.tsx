@@ -57,7 +57,7 @@ export function TextField({
           full ? 'w-full' : '',
           isDisabled ? isDisabled : '',
           lg ? 'px-5 py-4' : '',
-          'px-4 py-3 outline-none border-[2px] border-yellow-500 focus:border-yellow-600 font-[400] text-lg bg-white dark:bg-zinc-800',
+          'px-3 md:px-4 py-2 md:py-3 outline-none border-[2px] border-yellow-500 focus:border-yellow-600 font-[400] text-lg bg-white dark:bg-zinc-800',
         )}
       />
     </div>

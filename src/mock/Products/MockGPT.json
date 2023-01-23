@@ -1,0 +1,37 @@
+[
+  {
+    "name": "King size bed linens",
+    "description": "100% cotton, 300 thread count sheets, pillowcases, and duvet cover",
+    "quantity": 50,
+    "price": 50.0,
+    "image_url": "https://example.com/images/bed_linens.jpg"
+  },
+  {
+    "name": "Towel set",
+    "description": "100% cotton, 600 GSM towels (2 bath towels, 2 hand towels, 2 washcloths)",
+    "quantity": 100,
+    "price": 25.0,
+    "image_url": "https://example.com/images/towel_set.jpg"
+  },
+  {
+    "name": "Dinnerware set",
+    "description": "Porcelain plates, bowls, cups, and saucers for 4 guests",
+    "quantity": 50,
+    "price": 50.0,
+    "image_url": "https://example.com/images/dinnerware_set.jpg"
+  },
+  {
+    "name": "Silverware set",
+    "description": "Stainless steel forks, knives, spoons, and teaspoons for 4 guests",
+    "quantity": 100,
+    "price": 25.0,
+    "image_url": "https://example.com/images/silverware_set.jpg"
+  },
+  {
+    "name": "Mini fridge",
+    "description": "3.5 cubic feet, compact refrigerator",
+    "quantity": 10,
+    "price": 150.0,
+    "image_url": "https://example.com/images/mini_fridge.jpg"
+  }
+]
