@@ -1,4 +1,11 @@
-import { Budget, GenericCard, Hero, SiderCard, Slider } from '@/components'
+import {
+  Budget,
+  Features,
+  GenericCard,
+  Hero,
+  SiderCard,
+  Slider,
+} from '@/components'
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,10 +19,14 @@ export default function Home() {
       </Head>
       <main className="w-full">
         <Hero />
-        <Slider />
+        <Features />
         <div className="md:py-10 container_main">
+          <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
+            What are you looking
+          </h1>
           <Budget />
         </div>
+        {/* <Slider /> */}
         <GenericCard />
         <SiderCard />
         <div className="h-[300px] w-full bg-yellow-200 flex items-center justify-center">

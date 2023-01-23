@@ -11,9 +11,9 @@ export interface ProductProps {
   like: number;
   location: string;
   slug: string;
-  ownernumber: number;
+  ownernumber: number | string;
   owneremail: string;
-  time: any;
+  time: string | number;
   condition: string;
 }
 

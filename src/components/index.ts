@@ -10,3 +10,4 @@ export * from "./Slider/Slider";
 export * from "./Budget/Budget";
 export * from "./GenericCard/GenericCard";
 export * from "./Slider/SiderCard";
+export * from "./Features/Features";

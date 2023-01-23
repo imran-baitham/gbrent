@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import { Button } from '../Button/Button'
 import { TextField } from '../TextField/TextField'
-import HotelImage from '../../../public/assets/hotelware-graphic12.png'
+import HotelImage from '../../../public/assets/e2ehotelware-shoping.png'
 
 export function Budget() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <form action="##" className="w-full flex items-center justify-center">
+      <form action="##" className="w-full flex md:pt-5 justify-center">
         <div>
           <div className="flex mb-4">
             <Button
@@ -43,7 +43,7 @@ export function Budget() {
             <TextField
               label="What are you paying?"
               inputType="text"
-              placeholder="total price"
+              placeholder="Your total price"
               full
             />
             <TextField
@@ -57,7 +57,7 @@ export function Budget() {
             <Button
               primary
               xl
-              className="mt-3 font-bold py-[12.5px] md:py-[13.5px]"
+              className="mt-3 font-bold py-[10.9px] md:py-[13.5px]"
               type="submit"
               full
             >
@@ -66,13 +66,13 @@ export function Budget() {
           </div>
         </div>
       </form>
-      <div className="w-full my-6 md:my-0 flex items-center justify-center">
+      <div className="w-full my-6 md:my-0 flex items-center md:items-start justify-end">
         {/* <div className=' bg-red-400 absolute w-[550] h-[400px]'/> */}
           <Image
             src={HotelImage}
             alt={'hotelware image'}
-            width={440}
-            height={440}
+            width={600}
+            height={600}
           />
       </div>
     </div>
