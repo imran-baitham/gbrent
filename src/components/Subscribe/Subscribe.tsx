@@ -30,7 +30,7 @@ export function Subscribe() {
           {Notfi.map((item, index) => {
             return (
               <SwiperSlide key={index} className="">
-                <div className="mb-7 md:mb-14 relative h-[150px] md:h-[200px] bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                <div className="mb-7 md:mb-14 relative h-[150px] md:h-[270px] bg-gray-100 dark:bg-zinc-800 rounded-lg">
                   <Image
                     layout="fill"
                     src={item.image}

@@ -17,7 +17,7 @@ import { Autoplay, Pagination } from 'swiper'
 import { useTheme } from 'next-themes'
 import { Button } from '../Button/Button'
 
-let data = [
+export let data = [
   { id: 1, name: 'Seasons by Porcelite', image: html },
   { id: 2, name: 'Free Survey', image: css },
   { id: 3, name: 'Zanolli Pizza Ovens', image: javascript },

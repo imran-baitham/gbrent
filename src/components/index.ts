@@ -12,3 +12,4 @@ export * from "./GenericCard/GenericCard";
 export * from "./Slider/SiderCard";
 export * from "./Features/Features";
 export * from "./Subscribe/Subscribe";
+export * from "./GridCard/GridCard";
