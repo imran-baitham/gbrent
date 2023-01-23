@@ -29,16 +29,6 @@ export default function Home() {
         {/* <Slider /> */}
         <GenericCard />
         <SiderCard />
-        <div className="h-[300px] w-full bg-yellow-200 flex items-center justify-center">
-          Facbook Card Sliders 02
-        </div>
-
-        <div className="h-[400px] w-full bg-gray-400 flex items-center justify-center">
-          Subscribe Our Newsletter
-        </div>
-        <div className="h-[500px] w-full bg-gray-500 flex items-center justify-center">
-          Footer Last Section
-        </div>
       </main>
     </>
   )

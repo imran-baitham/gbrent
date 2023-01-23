@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -9,7 +8,7 @@ import 'swiper/css/pagination'
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper'
-import { HomeWareItems } from '@/mock'
+import { HomeWareItems, MOCKPRODUCTS } from '@/mock'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -23,7 +22,7 @@ export function SiderCard() {
           </h1>
           <Swiper
             slidesPerView={6}
-            spaceBetween={20}
+            spaceBetween={10}
             freeMode={true}
             pagination={{
               dynamicBullets: true,
@@ -32,7 +31,7 @@ export function SiderCard() {
             className="mySwiper"
             breakpoints={{
               '@0.00': {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 7,
               },
               '@0.75': {
@@ -43,29 +42,34 @@ export function SiderCard() {
               },
               '@1.50': {
                 slidesPerView: 6,
-                spaceBetween: 15,
               },
             }}
           >
-            {HomeWareItems.map((item, index) => {
+            {MOCKPRODUCTS.map((item, index) => {
               return (
                 <SwiperSlide key={index} className="mb-3">
                   <div className="bg-yellow-400 dark:bg-yellow-600">
-                    <div className="mb-7 md:mb-14">
-                      <Image
-                        width={320}
-                        height={300}
-                        src={item.image}
-                        alt={item.name}
-                      />
-                      <Link href={item.url}>
+                    <div className="mb-7 md:mb-12">
+                      <div className="relative h-[160px] w-full">
+                        <Image
+                          layout="fill"
+                          src={item.productIMG}
+                          alt={item.productname}
+                        />
+                      </div>
+                      <Link href={item.slug}>
                         <div className="pt-2 pb-4 px-1 md:p-2">
-                          <h1 className="rounded-sm uppercase text-[10px] md:text-[14px] font-bold">
-                            {item.name}
+                          <h1 className="rounded-sm uppercase text-[14px] font-bold">
+                            {item.productname}
                           </h1>
-                          <h2 className="text-[9px] sm:text-[12px]">
-                            {'Rs 1000/-'}
-                          </h2>
+                          <div className='flex items-center'>
+                            <del className="text-[10px] pr-2">
+                              {`Rs ${item.productprice}`}
+                            </del>
+                            <h2 className="text-[10px] md:text-[14px]">
+                              {`Rs ${item.productprice}`}
+                            </h2>
+                          </div>
                         </div>
                       </Link>
                     </div>

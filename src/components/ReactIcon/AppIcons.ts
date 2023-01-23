@@ -70,6 +70,7 @@ export { RiLinkedinBoxFill } from "@react-icons/all-files/ri/RiLinkedinBoxFill";
 export { RiYoutubeFill } from "@react-icons/all-files/ri/RiYoutubeFill";
 export { FaPlus } from "@react-icons/all-files/fa/FaPlus";
 export { FaWhatsappSquare } from "@react-icons/all-files/fa/FaWhatsappSquare";
+export { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 
 // ===============  { Fill Arrow Icons }  =================
 export { RiArrowDownSFill } from "@react-icons/all-files/ri/RiArrowDownSFill";

@@ -7,13 +7,16 @@ import 'swiper/css/pagination'
 // import required modules
 import { Autoplay, Pagination } from 'swiper'
 import Image from 'next/image'
-import { HomeWareItems } from '@/mock'
+import { MOCKPRODUCTS } from '@/mock'
+import { ReactIcon } from '../ReactIcon/ReactIcon'
 
 export function GenericCard() {
   return (
     <div className="py-7">
       <div className="container_main">
-        <h1 className="pb-6 md:pb-9 font-bold text-xl md:text-2xl">Best Selling</h1>
+        <h1 className="pb-6 md:pb-9 font-bold text-xl md:text-2xl">
+          Best Selling
+        </h1>
         <div>
           <Swiper
             slidesPerView={4}
@@ -42,28 +45,30 @@ export function GenericCard() {
               },
             }}
           >
-            {HomeWareItems.map((item, index) => {
+            {MOCKPRODUCTS.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <div className="mb-10 md:mb-14 rounded-md bg-gray-100 dark:bg-zinc-800">
-                    <Image
-                      width={600}
-                      height={300}
-                      src={item.image}
-                      alt={item.name}
-                      className={
-                        'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-md'
-                      }
-                    />
+                  <div className="mb-10 md:mb-14 rounded-sm bg-gray-100 dark:bg-zinc-800">
+                    <div className="h-[220px] w-full relative">
+                      <Image
+                        layout="fill"
+                        src={item.productIMG}
+                        alt={item.productname}
+                        className={
+                          'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-sm'
+                        }
+                      />
+                    </div>
                     <div className="p-3 flex justify-between items-center">
-                      <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold">
-                        {item.name}
+                      <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold pt-1">
+                        {item.productname}
                       </h1>
-                      <button className="border border-gray-400 py-1 px-4 rounded text-sm">
-                        WhatsApp
+                      <button className="flex items-center justify-between border border-gray-400 py-1 px-2 rounded-sm text-sm">
+                        <ReactIcon icon="FaWhatsapp" className="mr-2" />
+                        <div>WhatsApp</div>
                       </button>
                       <button className="font-bold absolute right-1 bottom-[100px] md:bottom-[115px] bg-yellow-600 text-white overflow-hidden z-10 rounded px-1 text-sm">
-                        Rs 70,000
+                        Rs {item.productprice}
                       </button>
                     </div>
                   </div>
