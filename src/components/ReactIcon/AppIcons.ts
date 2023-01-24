@@ -169,7 +169,15 @@ export { FaQuoteRight } from "@react-icons/all-files/fa/FaQuoteRight";
 
 export { IoMdQuote } from "@react-icons/all-files/io/IoMdQuote";
 
-// Awards
+// hotalware
+
+export { BsPersonFill } from "@react-icons/all-files/bs/BsPersonFill";
+export { FaSearch } from "@react-icons/all-files/fa/FaSearch";
+export { RiSearch2Fill } from "@react-icons/all-files/ri/RiSearch2Fill";
+export { HiShoppingCart } from "@react-icons/all-files/hi/HiShoppingCart";
+
+// ====================================================
+
 export { IoMdPersonAdd } from "@react-icons/all-files/io/IoMdPersonAdd";
 export { RiCupFill } from "@react-icons/all-files/ri/RiCupFill";
 export { FaCertificate } from "@react-icons/all-files/fa/FaCertificate";

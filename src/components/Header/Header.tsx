@@ -2,7 +2,6 @@ import { Navigation } from '@/mock'
 import Image from 'next/image'
 import logo from '../../../public/assets/hotalware-logo.png'
 import Link from 'next/link'
-import { Icon } from '../Icon/Icon'
 import { useTheme } from 'next-themes'
 import { GenrIcon } from '../GenerIcon/GenerIcon'
 
@@ -11,35 +10,38 @@ export function Header() {
 
   return (
     <>
-      <div className="container_main w-full h-auto border-b-2 border-black flex justify-between items-center p-4">
-        <Image src={logo} alt={'e2ehomeware'} width={200} height={50} />
-        <div>
-          <h1>E2E - HotalWare</h1>
+      <div className="container_main w-full h-auto flex justify-between items-center p-3">
+        {/* <Image src={logo} alt={'e2ehomeware'} width={200} height={50} /> */}
+        <div className="flex leading-0">
+          <sup className="text-[10px] translate-y-1 text-yellow-500">e2e</sup>
+          <h1 className="font-bold text-2xl">HotelWare</h1>
         </div>
-        <div>asdf</div>
+        <div>
+          <h1 className="text-sm">Free delivery across Pakistan</h1>
+        </div>
+        <div className="flex items-center">
+          <GenrIcon
+            icon={theme === 'light' ? 'RiMoonFill' : 'RiSunFill'}
+            onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          />
+          <GenrIcon icon={'RiSearch2Fill'} />
+          <GenrIcon icon={'BsPersonFill'} />
+          <GenrIcon icon={'HiShoppingCart'} />
+        </div>
       </div>
-      <div className="container_main w-full h-[60px] flex justify-between items-center bg-gray-100 border border-red-700 p-5">
+      <div className="w-full flex justify-center items-center p-3 bg-gray-100 dark:bg-zinc-800">
         <div className="hidden md:block">
           {Navigation.map((link, index) => {
             return (
               <Link
                 href={link.url}
                 key={index}
-                className={'mx-2 font-bold text-lg capitalize'}
+                className={'mx-3 font-[450] text-md capitalize'}
               >
                 {link.name}
               </Link>
             )
           })}
-        </div>
-        <div className="translate-x-[0.9rem]">
-          <div className="flex">
-            <GenrIcon
-              icon={theme === 'light' ? 'RiMoonFill' : 'RiSunFill'}
-              onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            />
-            <GenrIcon icon="RiShareForwardLine" />
-          </div>
         </div>
       </div>
     </>

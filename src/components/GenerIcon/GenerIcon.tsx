@@ -16,7 +16,7 @@ export function GenrIcon({ icon, onPress, clsx }: IconProps) {
       className={`flex justify-center items-center border border-gray-300 dark:border-slate-700 p-[8px] rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 ml-1 ${clsx}`}
       onClick={onPress}
     >
-      <ReactIcon icon={icon} className="h-7 w-7" />
+      <ReactIcon icon={icon} className="h-6 w-6" />
     </motion.button>
   )
 }
