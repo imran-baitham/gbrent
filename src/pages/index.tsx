@@ -28,7 +28,7 @@ export default function Home() {
           <Budget />
         </div>
         <GenericCard />
-        <div className="md:py-10 container_main">
+        {/* <div className="md:py-10 container_main">
           <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
             Blogs & Atricles
           </h1>
@@ -46,7 +46,7 @@ export default function Home() {
               )
             })}
           </div>
-        </div>
+        </div> */}
         <SiderCard />
       </main>
     </>

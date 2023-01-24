@@ -8,6 +8,8 @@
 4. Swiper - Slider
 5. ReactIcons - website icons
 6. TypeScript - product type
-7. 
-8. 
-9. 
+7.
+8.
+9.
+
+<!-- pagination={{ type: "fraction" }} -->

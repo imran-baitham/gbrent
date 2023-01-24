@@ -1,7 +1,7 @@
 export interface ProductProps {
   id: number | string;
   productIMG: any;
-  productIMGS: string[];
+  productIMGS: any;
   productname: string;
   productdescription: string;
   productprice: number;
@@ -15,6 +15,7 @@ export interface ProductProps {
   owneremail: string;
   time: string | number;
   condition: string;
+  availability: string;
 }
 
 export interface CommonProps {

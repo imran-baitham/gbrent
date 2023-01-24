@@ -31,10 +31,14 @@ export function Header() {
         )}
       >
         <div className="container_main w-full h-auto flex justify-between items-center p-2 md:p-4">
-          <div className="flex leading-0">
-            <sup className="text-[10px] translate-y-1 text-yellow-500">e2e</sup>
-            <h1 className="font-bold md:text-2xl">HotelWare</h1>
-          </div>
+          <Link href={'/'}>
+            <div className="flex leading-0">
+              <sup className="text-[10px] translate-y-1 text-yellow-500">
+                e2e
+              </sup>
+              <h1 className="font-bold md:text-2xl">HotelWare</h1>
+            </div>
+          </Link>
           <div className="hidden md:block">
             <h1 className="text-sm">Free delivery across Pakistan</h1>
           </div>

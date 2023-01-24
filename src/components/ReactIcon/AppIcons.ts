@@ -175,6 +175,8 @@ export { BsPersonFill } from "@react-icons/all-files/bs/BsPersonFill";
 export { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 export { RiSearch2Fill } from "@react-icons/all-files/ri/RiSearch2Fill";
 export { HiShoppingCart } from "@react-icons/all-files/hi/HiShoppingCart";
+export { BsHeart } from "@react-icons/all-files/bs/BsHeart";
+
 
 // ====================================================
 
