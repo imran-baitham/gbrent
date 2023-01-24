@@ -18,11 +18,41 @@ import { useTheme } from 'next-themes'
 import { Button } from '../Button/Button'
 
 export let data = [
-  { id: 1, name: 'Seasons by Porcelite', image: html },
-  { id: 2, name: 'Free Survey', image: css },
-  { id: 3, name: 'Zanolli Pizza Ovens', image: javascript },
-  { id: 11, name: 'Seasons by Free Survey', image: git },
-  { id: 12, name: 'Extensive Glassware Range for any occasion ', image: cpp },
+  {
+    id: 1,
+    para:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
+    name: 'Seasons by Porcelite',
+    image: html,
+  },
+  {
+    id: 2,
+    para:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
+    name: 'Free Survey',
+    image: css,
+  },
+  {
+    id: 3,
+    para:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
+    name: 'Zanolli Pizza Ovens',
+    image: javascript,
+  },
+  {
+    id: 11,
+    para:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
+    name: 'Seasons Free Survey',
+    image: git,
+  },
+  {
+    id: 12,
+    para:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
+    name: 'Extensive Rate Glasses',
+    image: cpp,
+  },
 ]
 
 export function Hero() {
@@ -55,7 +85,7 @@ export function Hero() {
           return (
             <SwiperSlide key={index} className="w-full dots">
               <div
-                className="h-[330px] sm:h-[500px] lg:h-[500px] xl:h-[700px]"
+                className="h-[500px] sm:h-[500px] lg:h-[500px] xl:h-[700px]"
                 style={{
                   backgroundImage: `url(${item.image.src})`,
                   backgroundSize: 'cover',
@@ -67,14 +97,21 @@ export function Hero() {
                 }}
               >
                 <div className="w-full h-full flex items-center container_main">
-                  <div className="md:w-3/4">
-                    <h1 className="text-md md:text-2xl text-white font-bold pb-2 md:pb-4">
+                  <div className="md:w-4/5">
+                    <h1 className="text-md md:text-xl text-white font-bold pb-2 md:pb-4">
                       E2E - HotelWare
                     </h1>
-                    <h1 className="text-4xl md:text-[80px] text-white font-samibold md:leading-[85px] pb-4 font-[Merriweather]">
+                    <h1 className="text-[30px] md:text-[65px] text-white font-samibold leading-[40px] md:leading-[85px] pb-3 font-[Nosifer]">
                       {item.name}
                     </h1>
-                    <Button primary xl className="px-5 md:px-10">
+                    <p className="text-[12px] md:text-xl text-gray-200 font-[450] md:pb-4 md:w-2/3">
+                      {item.para}
+                    </p>
+                    <Button
+                      primary
+                      xl
+                      className="px-5 md:px-10 mt-5 md:mt-3 rounded"
+                    >
                       Explore More
                     </Button>
                   </div>

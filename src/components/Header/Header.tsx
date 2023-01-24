@@ -26,11 +26,11 @@ export function Header() {
         className={classNames(
           'transition-all',
           isScrolled
-            ? 'fixed top-0 left-0 right-0 z-20 shadow-lg backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-zinc-800/75 [@supports(backdrop-filter:blur(0))]:bg-white/80'
+            ? 'fixed top-0 left-0 right-0 z-20 shadow-lg backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-zinc-900/90 [@supports(backdrop-filter:blur(0))]:bg-white/90'
             : 'shadow-sm',
         )}
       >
-        <div className="container_main w-full h-auto flex justify-between items-center p-4">
+        <div className="container_main w-full h-auto flex justify-between items-center p-2 md:p-4">
           <div className="flex leading-0">
             <sup className="text-[10px] translate-y-1 text-yellow-500">e2e</sup>
             <h1 className="font-bold md:text-2xl">HotelWare</h1>
