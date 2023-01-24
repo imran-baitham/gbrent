@@ -3,6 +3,11 @@ import { CommonProps } from "@/utils";
 export let Navigation: CommonProps[] = [
   {
     id: 1,
+    name: "SHOP ALL",
+    url: "/",
+  },
+  {
+    id: 1,
     name: "CONTAINERS",
     url: "/",
   },
@@ -24,6 +29,26 @@ export let Navigation: CommonProps[] = [
   {
     id: 5,
     name: "DUSTBIN",
+    url: "/",
+  },
+  {
+    id: 5,
+    name: "SALE",
+    url: "/",
+  },
+  {
+    id: 5,
+    name: "BLOGS",
+    url: "/",
+  },
+  {
+    id: 5,
+    name: "SALE WITH US",
+    url: "/",
+  },
+  {
+    id: 5,
+    name: "CONTACT US",
     url: "/",
   },
 ];

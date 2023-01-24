@@ -1,6 +1,4 @@
 import { Navigation } from '@/mock'
-import Image from 'next/image'
-import logo from '../../../public/assets/hotalware-logo.png'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { GenrIcon } from '../GenerIcon/GenerIcon'
@@ -32,8 +30,7 @@ export function Header() {
             : 'shadow-sm',
         )}
       >
-        <div className="container_main w-full h-auto flex justify-between items-center p-3">
-          {/* <Image src={logo} alt={'e2ehomeware'} width={200} height={50} /> */}
+        <div className="container_main w-full h-auto flex justify-between items-center p-4">
           <div className="flex leading-0">
             <sup className="text-[10px] translate-y-1 text-yellow-500">e2e</sup>
             <h1 className="font-bold md:text-2xl">HotelWare</h1>
@@ -52,7 +49,7 @@ export function Header() {
           </div>
         </div>
       </header>
-      <div className="hidden md:flex w-full justify-center items-center p-3 bg-gray-100 dark:bg-zinc-800">
+      <div className="hidden lg:flex w-full justify-center items-center p-3 bg-gray-100 dark:bg-zinc-800">
         <div className="">
           {Navigation.map((link, index) => {
             return (
