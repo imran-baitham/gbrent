@@ -16,11 +16,11 @@ function Index() {
         <h1 className="font-bold text-xl pb-3">
           Product - {Product?.productname}
         </h1>
-        <div className="grid md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="">
             <GenericSlider data={Product?.productIMGS} />
           </div>
-          <div className="md:px-4">
+          <div className="py-4 md:px-4">
             <h1 className="font-[450] text-[32px]">{Product?.productname}</h1>
             <hr className="border dark:border-zinc-700 my-3" />
             <div className="flex py-6">
@@ -76,7 +76,7 @@ function Index() {
         <hr className="border dark:border-zinc-700 my-9" />
         <div>Feature Tabs</div>
         <div className="py-10">
-          <Slider />{' '}
+          <Slider />
         </div>
       </div>
     </div>

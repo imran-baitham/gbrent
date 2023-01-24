@@ -49,7 +49,7 @@ export function GenericSlider({ data }: GenericSliderProps) {
         {sliders.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="relative h-[350px] w-full">
+              <div className="relative h-[220px] md:h-[350px] md:w-full">
                 <Image src={item?.image} alt={`${item.alt}`} layout="fill" />
               </div>
             </SwiperSlide>
