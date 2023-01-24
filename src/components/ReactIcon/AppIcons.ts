@@ -176,6 +176,15 @@ export { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 export { RiSearch2Fill } from "@react-icons/all-files/ri/RiSearch2Fill";
 export { HiShoppingCart } from "@react-icons/all-files/hi/HiShoppingCart";
 export { BsHeart } from "@react-icons/all-files/bs/BsHeart";
+export { BsEye } from "@react-icons/all-files/bs/BsEye";
+export { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
+
+
+export { BsFillHeartFill } from "@react-icons/all-files/bs/BsFillHeartFill";
+
+export { FcLike } from "@react-icons/all-files/fc/FcLike";
+export { FcApproval } from "@react-icons/all-files/fc/FcApproval";
+export { FcCancel } from "@react-icons/all-files/fc/FcCancel";
 
 
 // ====================================================

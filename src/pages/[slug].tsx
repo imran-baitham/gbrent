@@ -1,4 +1,12 @@
-import { Counter, GenericSlider, Heart, ReactIcon, Slider } from '@/components'
+import {
+  Counter,
+  GenericSlider,
+  Heart,
+  Rating,
+  ReactIcon,
+  Slider,
+} from '@/components'
+import { Tabs } from '@/components/Tabs/Tabs'
 import { MOCKPRODUCTS } from '@/mock'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -22,6 +30,7 @@ function Index() {
           </div>
           <div className="py-4 md:px-4">
             <h1 className="font-[450] text-[32px]">{Product?.productname}</h1>
+            <Rating rating={[1, 2, 3, 4, 5]} />
             <hr className="border dark:border-zinc-700 my-3" />
             <div className="flex py-6">
               <del className="text-[12px]">Rs.{Product?.productprice}</del>
@@ -71,11 +80,29 @@ function Index() {
                 </button>
               </div>
             </div>
+            <div className="py-3 flex items-center">
+              <ReactIcon icon="BsEye" />
+              <h1 className="pl-2 text-sm dark:text-gray-300 text-gray-500">
+                <b>{Product?.like}</b> Persons looking for this product
+              </h1>
+            </div>
+            <div className="pt-4 flex items-center">
+              <h1 className="text-sm dark:text-gray-300 text-gray-500">
+                <b>Share This</b>
+              </h1>
+              <ReactIcon icon="FcGoogle" className="ml-2" />
+              <ReactIcon icon="FcGoogle" className="ml-1" />
+              <ReactIcon icon="FcGoogle" className="ml-1" />
+            </div>
           </div>
         </div>
-        <hr className="border dark:border-zinc-700 my-9" />
-        <div>Feature Tabs</div>
+        <div className="pt-12">
+          <Tabs />
+        </div>
         <div className="py-10">
+          <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
+            Related Product
+          </h1>
           <Slider />
         </div>
       </div>
