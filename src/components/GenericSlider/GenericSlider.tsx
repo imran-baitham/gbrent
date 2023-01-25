@@ -49,8 +49,10 @@ export function GenericSlider({ data }: GenericSliderProps) {
         {sliders.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="relative h-[220px] md:h-[350px] md:w-full">
-                <Image src={item?.image} alt={`${item.alt}`} layout="fill" />
+              <div className="border dark:border-zinc-700 p-[22px]">
+                <div className="relative h-[220px] md:h-[350px] md:w-full">
+                  <Image src={item?.image} alt={`${item.alt}`} layout="fill" />
+                </div>
               </div>
             </SwiperSlide>
           )
@@ -68,13 +70,15 @@ export function GenericSlider({ data }: GenericSliderProps) {
         {sliders.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="pt-3">
-                <Image
-                  src={item.image}
-                  alt={`${item.alt}`}
-                  width={300}
-                  height={300}
-                />
+              <div className="border dark:border-zinc-700 p-2 mt-3">
+                <div className="">
+                  <Image
+                    src={item.image}
+                    alt={`${item.alt}`}
+                    width={300}
+                    height={300}
+                  />
+                </div>
               </div>
             </SwiperSlide>
           )

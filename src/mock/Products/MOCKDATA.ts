@@ -14,7 +14,12 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -24,12 +29,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -55,7 +55,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -65,17 +75,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -101,7 +101,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/706144/pexels-photo-706144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -111,17 +121,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -147,7 +147,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1543447/pexels-photo-1543447.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -157,17 +167,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -193,7 +193,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -203,17 +213,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -239,7 +239,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1173651/pexels-photo-1173651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -249,17 +259,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -285,7 +285,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -295,17 +305,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -331,7 +331,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/706137/pexels-photo-706137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -341,17 +351,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -377,7 +377,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1909752/pexels-photo-1909752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -387,17 +397,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -423,7 +423,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/2079436/pexels-photo-2079436.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -433,17 +443,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -469,7 +469,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1239298/pexels-photo-1239298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -479,17 +489,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
@@ -515,7 +515,17 @@ export let MOCKPRODUCTS: ProductProps[] = [
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/2062427/pexels-photo-2062427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
       {
@@ -525,17 +535,7 @@ export let MOCKPRODUCTS: ProductProps[] = [
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "images",
       },
     ],
