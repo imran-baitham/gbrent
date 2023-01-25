@@ -46,3 +46,286 @@ export let Blogs = [
     url: "/",
   },
 ];
+
+export let MockData = [
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness we provides Hotalware thing with discount and low price for bussiness",
+    image: blogone,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogthree,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfore,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogtwo,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+  {
+    id: 123,
+    title: "HotelWare",
+    subtitle:
+      "we provides Hotalware thing with discount and low price for bussiness.",
+    image: blogfice,
+    url: "/",
+  },
+];

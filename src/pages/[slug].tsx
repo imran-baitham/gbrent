@@ -8,7 +8,6 @@ import {
 } from '@/components'
 import { Tabs } from '@/components/Tabs/Tabs'
 import { MOCKPRODUCTS } from '@/mock'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Head from 'next/head'

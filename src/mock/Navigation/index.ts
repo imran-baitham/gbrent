@@ -4,7 +4,7 @@ export let Navigation: CommonProps[] = [
   {
     id: 1,
     name: "SHOP ALL",
-    url: "/",
+    url: "/collections/shop",
   },
   {
     id: 1,
@@ -33,11 +33,6 @@ export let Navigation: CommonProps[] = [
   },
   {
     id: 5,
-    name: "SALE",
-    url: "/",
-  },
-  {
-    id: 5,
     name: "BLOGS",
     url: "/",
   },
@@ -48,7 +43,12 @@ export let Navigation: CommonProps[] = [
   },
   {
     id: 5,
-    name: "CONTACT US",
+    name: "BUY WARE",
+    url: "/",
+  },
+  {
+    id: 5,
+    name: "SALE",
     url: "/",
   },
 ];
