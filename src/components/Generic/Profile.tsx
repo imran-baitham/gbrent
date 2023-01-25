@@ -32,7 +32,7 @@ export function Profile() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 z-10 mt-2 w-[220px] origin-top-right rounded-md bg-white dark:bg-zinc-900 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute -right-10 md:right-0 z-10 mt-4 md:mt-5 w-[220px] origin-top-right rounded-md bg-white dark:bg-zinc-900 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             {userLogin.map((item) => (
               <Menu.Item key={item.name}>
                 {({ active }) => (
