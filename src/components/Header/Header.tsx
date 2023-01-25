@@ -96,7 +96,7 @@ export function Header() {
             <div className="group">
               <ReactIcon
                 icon="RiSearch2Fill"
-                className="absolute top-[55px] w-8 h-8 ml-2 text-zinc-400"
+                className="absolute top-[45px] md:top-[55px] w-8 h-8 ml-2 text-zinc-400"
               />
               <input
                 type="search"
