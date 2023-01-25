@@ -86,8 +86,12 @@ export function Header() {
           search ? 'block' : '-translate-y-[50rem]',
           'overflow-y-auto h-screen w-full z-20 fixed left-0 top-0',
         )}
+        onClick={() => setSearch(false)}
       >
-        <div className="w-full h-auto dark:bg-zinc-900 bg-gray-50 shadow">
+        <div
+          className="w-full h-auto dark:bg-zinc-900 bg-gray-50 shadow"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="container_main py-10">
             <div className="group">
               <ReactIcon
