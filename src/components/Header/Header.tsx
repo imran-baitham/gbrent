@@ -7,6 +7,7 @@ import { classNames } from '@/utils'
 import { motion } from 'framer-motion'
 import { Badge } from '../Generic/Badge'
 import { ReactIcon } from '../ReactIcon/ReactIcon'
+import { Profile } from '../Generic/Profile'
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -57,7 +58,7 @@ export function Header() {
               onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             />
             <GenrIcon icon={'RiSearch2Fill'} onPress={() => setSearch(true)} />
-            <GenrIcon icon={'BsPersonFill'} />
+            <Profile />
             <GenrIcon icon={'HiShoppingCart'} />
           </div>
         </div>
@@ -88,7 +89,7 @@ export function Header() {
       >
         <div className="w-full h-auto dark:bg-zinc-900 bg-gray-50 shadow">
           <div className="container_main py-10">
-            <div className='group'>
+            <div className="group">
               <ReactIcon
                 icon="RiSearch2Fill"
                 className="absolute top-[55px] w-8 h-8 ml-2 text-zinc-400"
