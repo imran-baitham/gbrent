@@ -40,7 +40,7 @@ export function Header() {
             : 'shadow-sm',
         )}
       >
-        <div className="container_main w-full h-auto flex justify-between items-center p-2 md:p-4">
+        <div className="container_main w-full h-auto flex justify-between items-center p-3 md:p-4">
           <Link href={'/'}>
             <div className="flex leading-0">
               <sup className="text-[10px] translate-y-1 text-yellow-500">
