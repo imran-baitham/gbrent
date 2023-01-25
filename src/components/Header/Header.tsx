@@ -96,11 +96,11 @@ export function Header() {
             <div className="group">
               <ReactIcon
                 icon="RiSearch2Fill"
-                className="absolute top-[45px] md:top-[55px] w-8 h-8 ml-2 text-zinc-400"
+                className="absolute top-[70px] md:top-[55px] w-6 h-6 md:w-8 md:h-8 ml-2 text-zinc-400"
               />
               <input
                 type="search"
-                className="w-full outline-none text-xl md:text-4xl bg-transparent border-b-2 border-gray-300 dark:border-zinc-700 pl-14 py-2 md:py-3 mb-7"
+                className="mt-5 md:mt-0 w-full outline-none text-xl md:text-4xl bg-transparent border-b-2 border-gray-300 dark:border-zinc-700 pl-10 md:pl-14 py-2 md:py-3 mb-7"
                 placeholder="Search our catalog"
               />
             </div>
