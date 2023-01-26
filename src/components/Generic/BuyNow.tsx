@@ -26,7 +26,7 @@ export function BuyNow() {
         variants={variants}
         className={classNames(
           notfi ? 'block' : 'translate-x-[50rem]',
-          'fixed bottom-1 ml-1 right-1 md:bottom-5 md:right-5 md:w-[300px] h-auto bg-gray-100 dark:bg-zinc-800 py-4 px-4 z-10',
+          'fixed bottom-2 ml-3 right-3 md:bottom-5 md:right-5 md:w-[300px] h-auto bg-gray-100 dark:bg-zinc-800 py-4 px-4 z-10',
         )}
       >
         <div className="pb-2 flex justify-between">

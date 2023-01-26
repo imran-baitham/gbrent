@@ -31,9 +31,9 @@ export const RentTags = [
   },
   {
     id: 1,
-    name: "Storage units",
-    url: "/Storage-units",
-    icon: "RiHomeLine",
+    name: "Trip ware",
+    url: "/trip-ware",
+    icon: "GiTripwire",
   },
   {
     id: 1,
@@ -101,3 +101,13 @@ export const RentTags = [
 // VENUES
 // MUSIC
 // MISC
+
+//   {
+//     id: 1,
+//     // name: "Storage units",
+//     // GiTripwire
+//     name: "Trip ware",
+//     url: "/Storage-units",
+//     icon: "RiHomeLine",
+//   },
+//   Trip ware

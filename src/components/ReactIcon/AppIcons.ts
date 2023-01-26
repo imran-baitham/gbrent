@@ -218,6 +218,9 @@ export { MdEventSeat } from "@react-icons/all-files/md/MdEventSeat"; // event su
 export { FaPhotoVideo } from "@react-icons/all-files/fa/FaPhotoVideo"; // photography equipment
 export { AiOutlinePropertySafety } from "@react-icons/all-files/ai/AiOutlinePropertySafety"; // Property
 export { GiOfficeChair } from "@react-icons/all-files/gi/GiOfficeChair"; // Office
+export { GiTripwire } from "@react-icons/all-files/gi/GiTripwire"; // Trip
+
+
 
 
 
