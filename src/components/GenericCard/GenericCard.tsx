@@ -15,7 +15,8 @@ export function GenericCard() {
     <div className="py-7">
       <div className="container_main">
         <h1 className="pb-6 md:pb-9 font-bold text-xl md:text-2xl">
-          Best Selling
+          Best Selling  
+          {/* Selling */}
         </h1>
         <div>
           <Swiper

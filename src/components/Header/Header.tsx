@@ -59,7 +59,7 @@ export function Header() {
             />
             <GenrIcon icon={'RiSearch2Fill'} onPress={() => setSearch(true)} />
             <Profile />
-            <GenrIcon icon={'HiShoppingCart'} />
+            <GenrIcon icon={'HiMenuAlt2'} clsx={'block md:hidden'} />
           </div>
         </div>
       </header>

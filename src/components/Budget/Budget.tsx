@@ -6,7 +6,10 @@ import HotelImage from '../../../public/assets/e2ehotelware-shoping.png'
 export function Budget() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <form action="##" className="w-full flex md:pt-5 justify-center">
+      <form
+        onSubmit={() => alert('Soory this website is on production.')}
+        className="w-full flex md:pt-5 justify-center"
+      >
         <div>
           <div className="flex mb-4">
             <Button
@@ -41,9 +44,9 @@ export function Budget() {
           </div>
           <div className="md:flex">
             <TextField
-              label="What are you paying?"
+              label="What is your location?"
               inputType="text"
-              placeholder="Your total price"
+              placeholder="Enter your location"
               full
             />
             <TextField
@@ -61,19 +64,18 @@ export function Budget() {
               type="submit"
               full
             >
-              Find your HotelWare
+              Find your RentWare
             </Button>
           </div>
         </div>
       </form>
       <div className="w-full my-6 md:my-0 flex items-center md:items-start justify-end">
-        {/* <div className=' bg-red-400 absolute w-[550] h-[400px]'/> */}
-          <Image
-            src={HotelImage}
-            alt={'hotelware image'}
-            width={600}
-            height={600}
-          />
+        <Image
+          src={HotelImage}
+          alt={'hotelware image'}
+          width={600}
+          height={600}
+        />
       </div>
     </div>
   )
