@@ -30,7 +30,7 @@ function Index() {
     <div>
       <div className="container_main py-6">
         <div className="md:flex md:gap-2">
-          <div className="py-3 w-96">
+          <div className="py-3 w-96 border">
             <h1 className="font-bold text-2xl pt-1">Filter by</h1>
             <hr className="border dark:border-zinc-700 my-3" />
             {/* Calculations */}

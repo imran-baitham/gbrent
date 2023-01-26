@@ -34,7 +34,7 @@ export function Header() {
     <>
       <header
         className={classNames(
-          'transition-all',
+          '',
           isScrolled
             ? 'fixed top-0 left-0 right-0 z-20 shadow-lg backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-zinc-900/90 [@supports(backdrop-filter:blur(0))]:bg-white/90'
             : 'shadow-sm',
@@ -43,7 +43,7 @@ export function Header() {
         <div className="container_main w-full h-auto flex justify-between items-center p-3 md:p-4">
           <Link href={'/'}>
             <div className="flex leading-0">
-              <sup className="text-[10px] translate-y-1 text-yellow-500">
+              <sup className="text-[10px] translate-y-1 dark:text-yellow-500 text-yellow-700">
                 e2e
               </sup>
               <h1 className="font-bold md:text-2xl">HotelWare</h1>
@@ -130,3 +130,11 @@ export function Header() {
     </>
   )
 }
+
+/* 
+    <select value={theme} onChange={e => setTheme(e.target.value)}>
+      <option value="system">System</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+    </select>
+*/

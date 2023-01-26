@@ -1,5 +1,6 @@
 import {
   Budget,
+  BuyNow,
   Features,
   GenericCard,
   GridCard,
@@ -55,6 +56,7 @@ export default function Home() {
           </div>
         </div> */}
         <SiderCard />
+        <BuyNow />
       </main>
     </>
   )

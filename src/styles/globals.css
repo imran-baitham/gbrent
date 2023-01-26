@@ -46,7 +46,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  transition: all 0.4s;
+  /* transition: all 0.4s; */
 }
 
 .container_main {

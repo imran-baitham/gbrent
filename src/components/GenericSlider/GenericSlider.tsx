@@ -37,27 +37,34 @@ export function GenericSlider({ data }: GenericSliderProps) {
 
   return (
     <div>
-      <Swiper
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{
-          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
-        }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
-      >
-        {sliders.map((item, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <div className="border dark:border-zinc-700 p-[22px]">
-                <div className="relative h-[220px] md:h-[350px] md:w-full">
-                  <Image src={item?.image} alt={`${item.alt}`} layout="fill" />
+      <div className="border dark:border-zinc-700">
+        <Swiper
+          spaceBetween={10}
+          navigation={true}
+          thumbs={{
+            swiper:
+              thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+          }}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className="mySwiper2"
+        >
+          {sliders.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className="p-[22px]">
+                  <div className="relative h-[220px] md:h-[350px] md:w-full">
+                    <Image
+                      src={item?.image}
+                      alt={`${item.alt}`}
+                      layout="fill"
+                    />
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
