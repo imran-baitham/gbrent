@@ -63,7 +63,15 @@ export function GenericCard() {
                       <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold pt-1">
                         {item.productname}
                       </h1>
-                      <button className="flex items-center justify-between border border-gray-400 py-1 px-2 rounded-sm text-sm">
+                      <button
+                        className="flex items-center justify-between border border-gray-400 py-1 px-2 rounded-sm text-sm"
+                        onClick={() =>
+                          window.open(
+                            `https://api.whatsapp.com/send/?phone=${item.ownernumber}&text&app_absent=0`,
+                            '_blank',
+                          )
+                        }
+                      >
                         <ReactIcon icon="FaWhatsapp" className="mr-2" />
                         <div>WhatsApp</div>
                       </button>
