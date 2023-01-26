@@ -77,14 +77,9 @@ export function GenericSlider({ data }: GenericSliderProps) {
         {sliders.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="border dark:border-zinc-700 p-2 mt-3">
-                <div className="">
-                  <Image
-                    src={item.image}
-                    alt={`${item.alt}`}
-                    width={300}
-                    height={300}
-                  />
+              <div className="border dark:border-zinc-700 md:p-2 p-1 mt-3">
+                <div className="relative md:h-[80px] h-[50px] w-full">
+                  <Image src={item.image} alt={`${item.alt}`} layout="fill" />
                 </div>
               </div>
             </SwiperSlide>

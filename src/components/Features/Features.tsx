@@ -30,7 +30,7 @@ export function Features() {
                   />
                 </div>
                 <Link href={item.slug}>
-                  <div className="p-3 bg-zinc-800 border-[1px] border-black dark:border-zinc-700">
+                  <div className="p-3 bg-zinc-800 border-[1px] border-black dark:border-zinc-800">
                     <h1 className="text-white rounded-sm uppercase text-[12px] md:text-[14px] font-bold">
                       {item.productname}
                     </h1>

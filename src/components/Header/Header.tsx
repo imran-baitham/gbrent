@@ -44,13 +44,13 @@ export function Header() {
           <Link href={'/'}>
             <div className="flex leading-0">
               <sup className="text-[10px] translate-y-1 dark:text-yellow-500 text-yellow-700">
-                e2e
+                gb
               </sup>
-              <h1 className="font-bold md:text-2xl">HotelWare</h1>
+              <h1 className="font-bold md:text-2xl">RantWare</h1>
             </div>
           </Link>
           <div className="hidden md:block">
-            <h1 className="text-sm">Free delivery across Pakistan</h1>
+            <h1 className="text-sm">GBrent across gilgit baltistan</h1>
           </div>
           <div className="flex items-center">
             <GenrIcon
