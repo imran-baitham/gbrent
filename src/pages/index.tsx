@@ -3,11 +3,12 @@ import {
   BuyNow,
   Features,
   GenericCard,
-  GridCard,
+  CardBox,
   Hero,
   SiderCard,
 } from '@/components'
 import { Blogs } from '@/mock'
+import { RentTags } from '@/mock/RentTags'
 import Head from 'next/head'
 
 export default function Home() {
@@ -57,6 +58,23 @@ export default function Home() {
         </div> */}
         <SiderCard />
         <BuyNow />
+        <div className="md:py-10 container_main">
+          <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
+            Rent By Category
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-2">
+            {RentTags.map((data, index) => {
+              return (
+                <CardBox
+                  icon={data.icon}
+                  url={data.url}
+                  title={data.name}
+                  key={index}
+                />
+              )
+            })}
+          </div>
+        </div>
       </main>
     </>
   )

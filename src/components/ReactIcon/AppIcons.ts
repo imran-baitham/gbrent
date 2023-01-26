@@ -179,13 +179,11 @@ export { BsHeart } from "@react-icons/all-files/bs/BsHeart";
 export { BsEye } from "@react-icons/all-files/bs/BsEye";
 export { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 
-
 export { BsFillHeartFill } from "@react-icons/all-files/bs/BsFillHeartFill";
 
 export { FcLike } from "@react-icons/all-files/fc/FcLike";
 export { FcApproval } from "@react-icons/all-files/fc/FcApproval";
 export { FcCancel } from "@react-icons/all-files/fc/FcCancel";
-
 
 // ====================================================
 
@@ -201,3 +199,30 @@ export { CgMouse } from "@react-icons/all-files/cg/CgMouse";
 
 // navbar
 export { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
+
+// ============================== catagery
+
+export { RiMotorbikeFill } from "@react-icons/all-files/ri/RiMotorbikeFill"; // bike
+export { AiFillCar } from "@react-icons/all-files/ai/AiFillCar"; // car
+export { GoDeviceCamera } from "@react-icons/all-files/go/GoDeviceCamera"; // camera
+export { FaTools } from "@react-icons/all-files/fa/FaTools";
+export { ImHome3 } from "@react-icons/all-files/im/ImHome3";
+export { FcHome } from "@react-icons/all-files/fc/FcHome";
+
+export { RiHomeLine } from "@react-icons/all-files/ri/RiHomeLine"; // home
+export { GiPartyPopper } from "@react-icons/all-files/gi/GiPartyPopper"; // Party
+export { GiClothes } from "@react-icons/all-files/gi/GiClothes"; // Clothes
+export { GiMushroomsCluster } from "@react-icons/all-files/gi/GiMushroomsCluster"; // hotel rooms
+export { GiGamepad } from "@react-icons/all-files/gi/GiGamepad"; // hotel rooms
+export { MdEventSeat } from "@react-icons/all-files/md/MdEventSeat"; // event supplie
+export { FaPhotoVideo } from "@react-icons/all-files/fa/FaPhotoVideo"; // photography equipment
+export { AiOutlinePropertySafety } from "@react-icons/all-files/ai/AiOutlinePropertySafety"; // Property
+export { GiOfficeChair } from "@react-icons/all-files/gi/GiOfficeChair"; // Office
+
+
+
+
+
+
+
+

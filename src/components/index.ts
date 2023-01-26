@@ -16,4 +16,5 @@ export * from "./GridCard/GridCard";
 export * from "./Counter/Counter";
 export * from "./GenericSlider/GenericSlider";
 export * from "./Generic/Badge";
-export * from "./Generic/BuyNow"
+export * from "./Generic/BuyNow";
+export * from "./Generic/CardBox";
