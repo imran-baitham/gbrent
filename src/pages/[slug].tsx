@@ -87,7 +87,15 @@ function Index() {
                     <Heart />
                   </div>
                 </div>
-                <div className="bg-yellow-500 dark:bg-yellow-600 px-10 py-3 mr-2 w-full flex items-center">
+                <div
+                  className="bg-yellow-500 dark:bg-yellow-600 px-10 py-3 mr-2 w-full flex items-center cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      `https://api.whatsapp.com/send/?phone=${Product?.ownernumber}&text&app_absent=0`,
+                      '_blank',
+                    )
+                  }
+                >
                   <button className="font-bold text-md flex">
                     Contact
                     <div className="pl-1 md:hidden xl:block">With Seller</div>

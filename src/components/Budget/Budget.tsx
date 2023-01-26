@@ -14,7 +14,7 @@ export function Budget() {
               className="font-bold mr-1 px-8 border dark:border-zinc-600 w-full md:w-auto"
               type="submit"
             >
-              Buy ware
+              Buy rantware
             </Button>
             <Button
               lg
@@ -22,7 +22,7 @@ export function Budget() {
               type="submit"
               disabled
             >
-              Sell ware
+              Sell rantware
             </Button>
           </div>
           <div className="md:flex">

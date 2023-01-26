@@ -21,22 +21,22 @@ export let data = [
   {
     id: 1,
     para:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
-    name: 'Seasons by Porcelite',
+      'Create an online store and match the way your customers want to buy or rent.',
+    name: 'Sell and rent products online',
     image: html,
   },
   {
     id: 2,
     para:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
-    name: 'Free Survey',
+    name: 'Sell online',
     image: css,
   },
   {
     id: 3,
     para:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quasi similique nobis deleniti, ex delectus laboriosam quis ad sunt!',
-    name: 'Zanolli Pizza Ovens',
+    name: 'Connect with your toolstack',
     image: javascript,
   },
   {

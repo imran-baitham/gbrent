@@ -44,9 +44,9 @@ export function Header() {
           <Link href={'/'}>
             <div className="flex leading-0">
               <sup className="text-[10px] translate-y-1 dark:text-yellow-500 text-yellow-700">
-                gb
+                GB
               </sup>
-              <h1 className="font-bold md:text-2xl">RantWare</h1>
+              <h1 className="font-bold md:text-2xl text-lg">RantWare</h1>
             </div>
           </Link>
           <div className="hidden md:block">
