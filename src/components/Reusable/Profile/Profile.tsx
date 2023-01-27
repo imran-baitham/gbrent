@@ -19,8 +19,8 @@ const Signup: TypeProps[] = [
 ]
 
 const Login: TypeProps[] = [
-  { name: 'Sign In', href: '/login', icon: 'RiLoginBoxFill' },
-  { name: 'Sign Up', href: '/signup', icon: 'GoSignIn' },
+  { name: 'Sign In', href: '/account/login', icon: 'RiLoginBoxFill' },
+  { name: 'Sign Up', href: '/account/signup', icon: 'GoSignIn' },
 ]
 
 export function Profile() {
