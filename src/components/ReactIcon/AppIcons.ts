@@ -219,6 +219,14 @@ export { GiOfficeChair } from "@react-icons/all-files/gi/GiOfficeChair"; // Offi
 export { GiTripwire } from "@react-icons/all-files/gi/GiTripwire"; // Trip
 
 
+export { FiLogIn } from "@react-icons/all-files/fi/FiLogIn"; // Login
+export { RiLoginBoxFill } from "@react-icons/all-files/ri/RiLoginBoxFill"; // Login Fill
+export { GoSignIn } from "@react-icons/all-files/go/GoSignIn"; // Signup
+
+export { RiLogoutBoxLine } from "@react-icons/all-files/ri/RiLogoutBoxLine"; // Log Out
+export { IoMdSettings } from "@react-icons/all-files/io/IoMdSettings"; // Settings
+export { AiFillFlag } from "@react-icons/all-files/ai/AiFillFlag"; // Flag Report
+
 
 
 
