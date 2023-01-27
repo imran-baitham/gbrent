@@ -66,7 +66,7 @@ export default function Home({ posts }: StaticProps) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // fetch the blog posts from the mock API
   const res = await fetch('http://localhost:3000/api/product')
   const posts = await res.json()
