@@ -10,11 +10,8 @@ import {
   Subscribe,
 } from '@/components'
 import { RentTags } from '@/mock'
-import { StaticProps } from '@/utils'
 
-export default function Home({ posts }: StaticProps) {
-  console.log(posts, 'posts')
-
+export default function Home() {
   return (
     <>
       <Head>
@@ -32,8 +29,7 @@ export default function Home({ posts }: StaticProps) {
       </Head>
       <main className="w-full">
         <Hero />
-        <Features posts={posts} />
-
+        <Features />
         <div className="md:py-10 container_main">
           <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
             What are you looking
@@ -66,12 +62,12 @@ export default function Home({ posts }: StaticProps) {
   )
 }
 
-export async function getServerSideProps() {
-  // fetch the blog posts from the mock API
-  const res = await fetch('http://localhost:3000/api/product')
-  const posts = await res.json()
-
-  return {
-    props: { posts }, // props will be passed to the page
-  }
-}
+// import { StaticProps } from '@/utils'
+// export async function getServerSideProps() {
+//   // fetch the blog posts from the mock API
+//   const res = await fetch('http://localhost:3000/api/product')
+//   const posts = await res.json()
+//   return {
+//     props: { posts }, // props will be passed to the page
+//   }
+// }
