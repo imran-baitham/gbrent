@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper'
-import { HomeWareItems, MOCKPRODUCTS } from '@/mock'
+import { MOCKPRODUCTS } from '@/mock'
 import Link from 'next/link'
 import Image from 'next/image'
 

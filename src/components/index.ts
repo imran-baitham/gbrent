@@ -1,9 +1,8 @@
 export * from "./Button/Button";
 export * from "./Header/Header";
-export * from "./Icon/Icon";
+export * from "./Reusable/Icon/Icon";
 export * from "./ReactIcon/ReactIcon";
 export * from "./Footer/Footer";
-export * from "./GenerIcon/GenerIcon";
 export * from "./TextField/TextField";
 export * from "./Hero/Hero";
 export * from "./Slider/Slider";
@@ -18,3 +17,6 @@ export * from "./GenericSlider/GenericSlider";
 export * from "./Generic/Badge";
 export * from "./Generic/BuyNow";
 export * from "./Generic/CardBox";
+export * from "./Generic/Profile";
+
+/* =================={         }================= */

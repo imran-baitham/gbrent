@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import { ReactIcon, TAppIcons } from '../ReactIcon/ReactIcon'
+import { ReactIcon, TAppIcons } from '../../index'
 
 interface IconProps {
   onPress?: () => void
@@ -8,7 +8,7 @@ interface IconProps {
   clsx?: string
 }
 
-export function GenrIcon({ icon, onPress, clsx }: IconProps) {
+export function Icon({ icon, onPress, clsx }: IconProps) {
   return (
     <motion.button
       whileHover={{ scale: 1 }}

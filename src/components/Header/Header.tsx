@@ -1,13 +1,10 @@
-import { HomeWareItems, Navigation } from '@/mock'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import { GenrIcon } from '../GenerIcon/GenerIcon'
-import { useEffect, useState } from 'react'
-import { classNames } from '@/utils'
 import { motion } from 'framer-motion'
-import { Badge } from '../Generic/Badge'
-import { ReactIcon } from '../ReactIcon/ReactIcon'
-import { Profile } from '../Generic/Profile'
+import { useEffect, useState } from 'react'
+import { ReactIcon, Icon, Badge, Profile } from '../index'
+import { classNames } from '@/utils'
+import { HomeWareItems, Navigation } from '@/mock'
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -53,13 +50,13 @@ export function Header() {
             <h1 className="text-sm">GBrent across gilgit baltistan</h1>
           </div>
           <div className="flex items-center">
-            <GenrIcon
+            <Icon
               icon={theme === 'light' ? 'RiMoonFill' : 'RiSunFill'}
               onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             />
-            <GenrIcon icon={'RiSearch2Fill'} onPress={() => setSearch(true)} />
+            <Icon icon={'RiSearch2Fill'} onPress={() => setSearch(true)} />
             <Profile />
-            <GenrIcon icon={'HiMenuAlt2'} clsx={'block md:hidden'} />
+            <Icon icon={'HiMenuAlt2'} clsx={'block md:hidden'} />
           </div>
         </div>
       </header>
@@ -119,7 +116,7 @@ export function Header() {
                 )
               })}
             </div>
-            <GenrIcon
+            <Icon
               icon={'VscClose'}
               onPress={() => setSearch(false)}
               clsx={'absolute top-2 right-2 md:top-5 md:right-5'}

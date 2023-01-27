@@ -1,7 +1,7 @@
 import { classNames } from '@/utils'
 import { Menu, Transition } from '@headlessui/react'
 import React, { Fragment } from 'react'
-import { GenrIcon } from '../GenerIcon/GenerIcon'
+import { Icon } from '../index'
 
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -20,7 +20,7 @@ export function Profile() {
       <Menu as="div" className="relative">
         <div>
           <Menu.Button className="">
-            <GenrIcon icon={'BsPersonFill'} />
+            <Icon icon={'BsPersonFill'} />
           </Menu.Button>
         </div>
         <Transition

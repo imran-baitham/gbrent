@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { ReactIcon } from '../ReactIcon/ReactIcon'
+import { ReactIcon } from '../index'
 
 interface CardBoxProps {
   title: string

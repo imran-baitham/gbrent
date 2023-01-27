@@ -4,11 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
+
 // import required modules
 import { Autoplay, Pagination } from 'swiper'
 import Image from 'next/image'
 import { MOCKPRODUCTS } from '@/mock'
-import { ReactIcon } from '../ReactIcon/ReactIcon'
+import { ReactIcon } from '../index'
 
 export function GenericCard() {
   return (
