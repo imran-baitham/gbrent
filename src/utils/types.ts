@@ -18,6 +18,10 @@ export interface ProductProps {
   availability: string;
 }
 
+export interface StaticProps {
+  posts: ProductProps[]
+}
+
 export interface CommonProps {
   id: number;
   name: string;

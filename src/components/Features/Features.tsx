@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { MOCKPRODUCTS } from '@/mock'
+import { ProductProps, StaticProps } from '@/utils'
 
-export function Features() {
+export function Features({ posts }: StaticProps) {
+  console.log(posts, 'posts fetch')
   return (
     <div className="py-7 md:py-10">
       <div className="container_main">
@@ -10,7 +11,7 @@ export function Features() {
           Featured Categories
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
-          {MOCKPRODUCTS.map((item, index) => {
+          {posts.map((item: ProductProps, index: number) => {
             return (
               <div key={index}>
                 <div className="h-[140px] w-full relative">
