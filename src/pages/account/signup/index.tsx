@@ -150,7 +150,7 @@ function Index() {
               <p className="py-5 md:py-0 text-sm font-light flex items-center justify-center text-gray-500 dark:text-gray-400">
                 Already have an account?
                 <div className="font-bold text-1xl text-[#0047FF] ml-2">
-                  <Link href={'/login'}>Log In</Link>
+                  <Link href={'/account/login'}>Log In</Link>
                 </div>
               </p>
             </form>
