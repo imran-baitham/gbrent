@@ -2,8 +2,8 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import React, { useEffect, useState } from 'react'
-import { Footer, Header, Subscribe } from '@/components'
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
+import { Footer, Header } from '@/components'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +12,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <Header />
         <Component {...pageProps} />
         <Analytics />
-        <Subscribe />
         <Footer />
       </ThemeProvider>
     </Hydrated>

@@ -1,15 +1,14 @@
 import { classNames } from '@/utils'
 import { motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
-import { Button } from '../Button/Button'
-import { ReactIcon } from '../ReactIcon/ReactIcon'
+import { ReactIcon, Button } from '../../index'
 
 const variants = {
   open: { opacity: 1, x: 0 },
   close: { opacity: 0.7, x: '100rem' },
 }
 
-export function BuyNow() {
+export function Notify() {
   const [notfi, setNotfi] = useState(false)
 
   useEffect(() => {

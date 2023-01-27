@@ -1,14 +1,15 @@
+import Head from 'next/head'
 import {
   Budget,
-  BuyNow,
+  Notify,
   Features,
   GenericCard,
-  CardBox,
+  CategoryBox,
   Hero,
   SiderCard,
+  Subscribe,
 } from '@/components'
-import { RentTags } from '@/mock/RentTags'
-import Head from 'next/head'
+import { RentTags } from '@/mock'
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
         </div>
         <GenericCard />
         <SiderCard />
-        <BuyNow />
+        <Notify />
         <div className="md:py-10 container_main">
           <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
             Rent By Category
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-2">
             {RentTags.map((data, index) => {
               return (
-                <CardBox
+                <CategoryBox
                   icon={data.icon}
                   url={data.url}
                   title={data.name}
@@ -55,6 +56,7 @@ export default function Home() {
             })}
           </div>
         </div>
+        <Subscribe />
       </main>
     </>
   )

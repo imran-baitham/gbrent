@@ -121,12 +121,12 @@ function Index() {
           <div className="pt-12">
             <Tabs />
           </div>
-          <div className="py-10">
+          {/* <div className="py-10">
             <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
               Related Product
             </h1>
             <Slider />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -1,6 +1,5 @@
 export * from "./Button/Button";
 export * from "./Header/Header";
-export * from "./Reusable/Icon/Icon";
 export * from "./ReactIcon/ReactIcon";
 export * from "./Footer/Footer";
 export * from "./TextField/TextField";
@@ -14,9 +13,11 @@ export * from "./Subscribe/Subscribe";
 export * from "./GridCard/GridCard";
 export * from "./Counter/Counter";
 export * from "./GenericSlider/GenericSlider";
-export * from "./Generic/Badge";
-export * from "./Generic/BuyNow";
-export * from "./Generic/CardBox";
-export * from "./Generic/Profile";
 
-/* =================={         }================= */
+/* ==========={ Reusable Components }============ */
+
+export * from "./Reusable/Notify/Notify";
+export * from "./Reusable/Badge/Badge";
+export * from "./Reusable/Icon/Icon";
+export * from "./Reusable/Profile/Profile";
+export * from "./Reusable/CategoryBox/CategoryBox";

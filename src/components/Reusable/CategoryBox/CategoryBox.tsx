@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
-import { ReactIcon } from '../index'
+import { ReactIcon } from '../../index'
 
 interface CardBoxProps {
   title: string
   url: string
   icon: any
 }
-export function CardBox({ title, url, icon }: CardBoxProps) {
+export function CategoryBox({ title, url, icon }: CardBoxProps) {
   return (
     <Link href={url}>
       <div className="bg-gray-50 dark:bg-zinc-900 border dark:border-zinc-700 px-2 py-4 text-center flex items-center justify-center group dark:hover:text-zinc-200">

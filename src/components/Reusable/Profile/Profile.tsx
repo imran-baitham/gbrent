@@ -1,7 +1,7 @@
 import { classNames } from '@/utils'
 import { Menu, Transition } from '@headlessui/react'
 import React, { Fragment } from 'react'
-import { Icon } from '../index'
+import { Icon } from '../../index'
 
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
