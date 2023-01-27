@@ -1,5 +1,5 @@
 export interface ProductProps {
-  id: number | string;
+  id: number;
   productIMG: any;
   productIMGS: any;
   productname: string;
@@ -16,6 +16,10 @@ export interface ProductProps {
   time: string | number;
   condition: string;
   availability: string;
+}
+
+export interface StaticProps {
+  posts: ProductProps[]
 }
 
 export interface CommonProps {
