@@ -13,6 +13,7 @@ export * from "./Subscribe/Subscribe";
 export * from "./GridCard/GridCard";
 export * from "./Counter/Counter";
 export * from "./GenericSlider/GenericSlider";
+export * from "./ProductCard/ProductCard";
 
 /* ==========={ Reusable Components }============ */
 
@@ -21,3 +22,4 @@ export * from "./Reusable/Badge/Badge";
 export * from "./Reusable/Icon/Icon";
 export * from "./Reusable/Profile/Profile";
 export * from "./Reusable/CategoryBox/CategoryBox";
+export * from "./Reusable/HowWork/Works";
