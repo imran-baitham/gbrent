@@ -18,7 +18,7 @@ export function Notify() {
   }, [notfi])
 
   return (
-    <div className="w-full h-screen bg-[rgba(0,0,0,0.9)] fixed z-40 top-0 right-0 left-0">
+    <div className="w-full h-screen bg-black fixed z-40 top-0 right-0 left-0">
       <motion.div
         animate={notfi ? 'open' : 'close'}
         transition={{ duration: 0.8 }}
