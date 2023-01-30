@@ -67,10 +67,12 @@ body {
 
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
+  border: 1px solid #ca8a04 !important;
 }
 
 .swiper-slide-visible {
   opacity: 0.6;
+  border: 1px solid transparent !important;
 }
 
 .swiper-button-next::after {
