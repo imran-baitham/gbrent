@@ -15,7 +15,7 @@ export function HowWorks() {
                 <div className="flex items-center pl-3">
                   <div>
                     <h1 className="font-bold text-lg">{data.title}</h1>
-                    <p className="text-sm">{data.subTitle}</p>
+                    <p className="text-sm text-gray-700 dark:text-gray-300">{data.subTitle}</p>
                   </div>
                 </div>
               </div>

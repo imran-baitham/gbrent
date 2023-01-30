@@ -12,6 +12,7 @@ import {
   ProductCard,
 } from '@/components'
 import { RentTags } from '@/mock'
+import { MOCKPRODUCTS } from '@/mock'
 
 export default function Home() {
   return (
@@ -38,17 +39,27 @@ export default function Home() {
           </div>
           <HowWorks />
         </div>
-        <Features />
-        <div className="md:py-10 container_main">
+        {/* <Features /> */}
+        {/* <div className="md:py-10 container_main">
           <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
             What are you looking
-          </h1>
+          </h1> 
           <Budget />
+        </div> */}
+
+        <div className="py-7">
+          <div className="container_main">
+            <h1 className="pb-6 md:pb-9 font-bold text-xl md:text-2xl">
+              Best Rentles
+            </h1>
+            <ProductCard ProductData={MOCKPRODUCTS} />
+            <ProductCard ProductData={MOCKPRODUCTS} />
+          </div>
         </div>
-        <ProductCard />
-        <GenericCard />
+
+        {/* <GenericCard /> */}
         <SiderCard />
-        <Notify />
+        {/* <Notify /> */}
         <div className="md:py-10 container_main">
           <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
             Rent By Category
@@ -66,7 +77,7 @@ export default function Home() {
             })}
           </div>
         </div>
-        <Subscribe />
+        {/* <Subscribe /> */}
       </main>
     </>
   )

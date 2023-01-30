@@ -23,3 +23,4 @@ export * from "./Reusable/Icon/Icon";
 export * from "./Reusable/Profile/Profile";
 export * from "./Reusable/CategoryBox/CategoryBox";
 export * from "./Reusable/HowWork/Works";
+export * from "./Reusable/NoFound/NotFound";

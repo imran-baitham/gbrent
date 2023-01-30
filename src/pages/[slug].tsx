@@ -2,6 +2,7 @@ import {
   Counter,
   GenericSlider,
   Heart,
+  NotFound,
   Rating,
   ReactIcon,
   Slider,
@@ -17,6 +18,10 @@ function Index() {
   const { slug } = router.query
 
   let Product = MOCKPRODUCTS.find((item) => item.slug === slug)
+
+  if (!Product) {
+    return <NotFound />
+  }
 
   return (
     <>

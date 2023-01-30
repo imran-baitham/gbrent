@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { ReactIcon } from '../ReactIcon/ReactIcon'
 
@@ -12,7 +13,6 @@ const navigation = {
     { name: 'Documentation', href: '#' },
     { name: 'API Status', href: '#' },
     { name: 'Pricing', href: '#' },
-    // { name: "Guides", href: "#" },
   ],
   company: [
     { name: 'About', href: '#' },
@@ -40,7 +40,47 @@ export function Footer() {
 
   return (
     <footer>
-      <div className="border-t-[1px] dark:border-zinc-700 mt-16 md:mt-0">
+      <div className="bg-yellow-200 dark:bg-yellow-700 mt-10">
+        <div className="container_main md:h-[180px] flex justify-center">
+          <div className="md:px-[30px] md:flex h-full">
+            <img
+              src="https://rentable.pk/assets/graphics/feature2.webp"
+              alt=""
+              className="h-[180px]"
+            />
+            <div className="h-full flex items-center pr-10 md:border-r-[1px] border-yellow-900">
+              <div>
+                <h1 className="font-bold lg:text-4xl md:text-2xl text-xl">
+                  TRY THE GBRENT APP
+                </h1>
+                <p className="font-[420] lg:text-xl text-sm">
+                  Turn Your Liabilities into Paying Assets
+                </p>
+              </div>
+            </div>
+            <div className="h-full flex items-center md:pl-5 pt-5">
+              <div>
+                <h1 className="font-bold md:text-xl text-md">
+                  TRY THE RENTABLE APP
+                </h1>
+                <div className="flex items-center mt-2 pb-8 md:pb-0">
+                  <img
+                    src="https://rentable.pk/assets/graphics/appstore.webp"
+                    alt=""
+                    className="w-[100px]"
+                  />
+                  <img
+                    src="https://rentable.pk/assets/graphics/playstore.webp"
+                    alt=""
+                    className="w-[100px] ml-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="border-t-[1px] dark:border-zinc-700">
         <div className="mx-auto max-w-7xl py-12 lg:pt-16 container_main">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">

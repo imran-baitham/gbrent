@@ -19,7 +19,7 @@ export interface ProductProps {
 }
 
 export interface StaticProps {
-  posts: ProductProps[]
+  ProductData: ProductProps[];
 }
 
 export interface CommonProps {
