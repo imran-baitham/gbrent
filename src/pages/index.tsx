@@ -10,6 +10,7 @@ import {
   Subscribe,
   HowWorks,
   ProductCard,
+  Carousel,
 } from '@/components'
 import { RentTags } from '@/mock'
 import { MOCKPRODUCTS } from '@/mock'
@@ -77,6 +78,7 @@ export default function Home() {
             })}
           </div>
         </div>
+        {/* <Carousel /> */}
         {/* <Subscribe /> */}
       </main>
     </>

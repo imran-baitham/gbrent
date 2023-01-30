@@ -173,6 +173,7 @@ export { BsPersonFill } from "@react-icons/all-files/bs/BsPersonFill";
 export { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 export { RiSearch2Fill } from "@react-icons/all-files/ri/RiSearch2Fill";
 export { HiShoppingCart } from "@react-icons/all-files/hi/HiShoppingCart";
+
 export { BsHeart } from "@react-icons/all-files/bs/BsHeart";
 export { BsEye } from "@react-icons/all-files/bs/BsEye";
 export { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
@@ -218,20 +219,13 @@ export { AiOutlinePropertySafety } from "@react-icons/all-files/ai/AiOutlineProp
 export { GiOfficeChair } from "@react-icons/all-files/gi/GiOfficeChair"; // Office
 export { GiTripwire } from "@react-icons/all-files/gi/GiTripwire"; // Trip
 
-
 export { FiLogIn } from "@react-icons/all-files/fi/FiLogIn"; // Login
 export { RiLoginBoxFill } from "@react-icons/all-files/ri/RiLoginBoxFill"; // Login Fill
 export { GoSignIn } from "@react-icons/all-files/go/GoSignIn"; // Signup
+export { RiFileUploadFill } from "@react-icons/all-files/ri/RiFileUploadFill"; // upload icon
 
 export { RiLogoutBoxLine } from "@react-icons/all-files/ri/RiLogoutBoxLine"; // Log Out
 export { IoMdSettings } from "@react-icons/all-files/io/IoMdSettings"; // Settings
 export { AiFillFlag } from "@react-icons/all-files/ai/AiFillFlag"; // Flag Report
-
-
-
-
-
-
-
 
 

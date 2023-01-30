@@ -1,11 +1,11 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
+// ===={ Import Swiper styles }====
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-// import required modules
+// ===={ import required modules }====
 import { Autoplay, Pagination } from 'swiper'
 import Image from 'next/image'
 import { MOCKPRODUCTS } from '@/mock'
@@ -16,8 +16,7 @@ export function GenericCard() {
     <div className="py-7">
       <div className="container_main">
         <h1 className="pb-6 md:pb-9 font-bold text-xl md:text-2xl">
-          Best Selling  
-          {/* Selling */}
+          Best Selling
         </h1>
         <div>
           <Swiper

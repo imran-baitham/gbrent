@@ -14,7 +14,6 @@ export * from "./GridCard/GridCard";
 export * from "./Counter/Counter";
 export * from "./GenericSlider/GenericSlider";
 export * from "./ProductCard/ProductCard";
-
 /* ==========={ Reusable Components }============ */
 
 export * from "./Reusable/Notify/Notify";
@@ -24,3 +23,4 @@ export * from "./Reusable/Profile/Profile";
 export * from "./Reusable/CategoryBox/CategoryBox";
 export * from "./Reusable/HowWork/Works";
 export * from "./Reusable/NoFound/NotFound";
+export * from "./Reusable/Carousel/Carousel";

@@ -101,6 +101,12 @@ body {
   position: absolute;
 }
 
+/* //.swiper-pagination  */
+/* .swiper-pagination-fraction  */
+.swiper-pagination-horizontal {
+  color: white !important;
+}
+
 /* .swiper-button-prev::after {
   content: "";
   background-color: white !important;

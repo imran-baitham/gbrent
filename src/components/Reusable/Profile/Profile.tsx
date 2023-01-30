@@ -12,7 +12,7 @@ interface TypeProps {
 
 const Signup: TypeProps[] = [
   { name: 'Profile', href: '#', icon: 'BsPersonFill' },
-  { name: 'Shops', href: '#', icon: 'HiShoppingCart' },
+  { name: 'My Uplaods', href: '#', icon: 'RiFileUploadFill' },
   { name: 'Settings', href: '#', icon: 'IoMdSettings' },
   { name: 'Report Problem', href: '#', icon: 'AiFillFlag' },
   { name: 'Sign out', href: '#', icon: 'RiLogoutBoxLine' },
