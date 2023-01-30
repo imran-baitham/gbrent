@@ -18,46 +18,45 @@ export function Notify() {
   }, [notfi])
 
   return (
-    <div className="w-full h-screen bg-black fixed z-40 top-0 right-0 left-0">
-      <motion.div
-        animate={notfi ? 'open' : 'close'}
-        transition={{ duration: 0.8 }}
-        variants={variants}
-        className={classNames(
-          notfi ? 'block' : 'translate-x-[50rem]',
-          'fixed bottom-2 ml-3 right-3 md:bottom-5 md:right-5 md:w-[300px] h-auto bg-gray-100 dark:bg-zinc-800 py-4 px-4 z-10',
-        )}
-      >
-        <div className="pb-2 flex justify-between">
-          <h1>
-            <b className="font-bold">gbrent.xyz</b>
-            <span className="font-[420]"> is Coming Soon</span>
-          </h1>
-          <button
-            className="absolute top-2 right-2"
-            onClick={() => setNotfi(false)}
-          >
-            <ReactIcon icon="VscClose" className="w-5 h-5" />
-          </button>
-        </div>
-        <p className="text-sm pb-3">
-          {"We're"} working hard to finish the development of this site. Sign up
-          below to receive updates and to be notified when we launch!
-        </p>
-        <Button
-          primary
-          full
-          className="uppercase"
-          onClick={() =>
-            window.open(
-              'https://api.whatsapp.com/send/?phone=923118923911&text&app_absent=0',
-              '_blank',
-            )
-          }
+    <motion.div
+      animate={notfi ? 'open' : 'close'}
+      transition={{ duration: 0.8 }}
+      variants={variants}
+      className={classNames(
+        notfi ? 'block' : 'translate-x-[50rem]',
+        'fixed bottom-2 ml-3 right-3 md:bottom-5 md:right-5 md:w-[300px] h-auto bg-gray-100 dark:bg-zinc-800 py-4 px-4 z-10',
+      )}
+    >
+      <div className="pb-2 flex justify-between">
+        <h1>
+          <b className="font-bold">gbrent.xyz</b>
+          <span className="font-[420]"> is Coming Soon</span>
+        </h1>
+        <button
+          className="absolute top-2 right-2"
+          onClick={() => setNotfi(false)}
         >
-          Notify me!
-        </Button>
-        {/* <h1 className="font-bold">Buy Now</h1>
+          <ReactIcon icon="VscClose" className="w-5 h-5" />
+        </button>
+      </div>
+      <p className="text-sm pb-3">
+        {"We're"} working hard to finish the development of this site. Sign up
+        below to receive updates and to be notified when we launch!
+      </p>
+      <Button
+        primary
+        full
+        className="uppercase"
+        onClick={() =>
+          window.open(
+            'https://api.whatsapp.com/send/?phone=923118923911&text&app_absent=0',
+            '_blank',
+          )
+        }
+      >
+        Notify me!
+      </Button>
+      {/* <h1 className="font-bold">Buy Now</h1>
         <div onClick={(e) => e.stopPropagation()}>
           <div
             className="font-bold cursor-pointer text-yellow-600"
@@ -71,7 +70,6 @@ export function Notify() {
             Contact Me
           </div>
         </div> */}
-      </motion.div>
-    </div>
+    </motion.div>
   )
 }
