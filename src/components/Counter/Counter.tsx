@@ -1,5 +1,6 @@
-import { classNames } from '@/utils'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import { classNames } from '@/utils'
 import { ReactIcon } from '../ReactIcon/ReactIcon'
 
 export function Counter() {
@@ -28,20 +29,22 @@ export function Heart() {
   const [increase, setIncrease] = useState<boolean>(false)
 
   return (
-    <div className="flex items-center justify-between w-full">
-      <button
-        className="font-bold text-xl"
-        onClick={() => setIncrease((c) => !c)}
-      >
-        <ReactIcon
-          icon={increase === true ? 'BsFillHeartFill' : 'BsHeart'}
-          className={classNames(
-            'w-6 h-6',
-            increase === true ? 'text-red-500' : '',
-          )}
-        />
-      </button>
-    </div>
+    <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }}>
+      <div className="flex items-center justify-between w-full">
+        <button
+          className="font-bold text-xl"
+          onClick={() => setIncrease((c) => !c)}
+        >
+          <ReactIcon
+            icon={increase === true ? 'BsFillHeartFill' : 'BsHeart'}
+            className={classNames(
+              'w-5 h-5 md:w-6 md:h-6',
+              increase === true ? 'text-red-500' : '',
+            )}
+          />
+        </button>
+      </div>
+    </motion.button>
   )
 }
 

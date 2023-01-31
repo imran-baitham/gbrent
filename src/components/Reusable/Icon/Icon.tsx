@@ -3,7 +3,7 @@ import React from 'react'
 import { ReactIcon, TAppIcons } from '../../index'
 
 interface IconProps {
-  onPress?: () => void
+  onPress?: (event: any) => void
   icon: TAppIcons
   clsx?: string
 }

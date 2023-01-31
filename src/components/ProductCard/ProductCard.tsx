@@ -10,9 +10,9 @@ import { Pagination } from 'swiper'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ReactIcon } from '../ReactIcon/ReactIcon'
-import { Icon } from '../Reusable/Icon/Icon'
 import { StaticProps } from '@/utils'
 import { useRouter } from 'next/router'
+import { Heart } from '../Counter/Counter'
 
 interface RatingProps {
   rating: number[]
@@ -87,14 +87,10 @@ export function ProductCard({ ProductData }: StaticProps) {
                         />
                         <h3 className="pl-1 text-[13px]">{item.location}</h3>
                       </div>
-                      <div
-                        className="flex justify-end items-center w-full"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <Icon
-                          icon="BsHeart"
-                          clsx="p-[0px] h-9 w-9 border-none"
-                        />
+                      <div className="flex justify-end items-center w-full">
+                        <button onClick={(e) => e.stopPropagation()}>
+                          <Heart />
+                        </button>
                       </div>
                     </div>
                     <h5>
