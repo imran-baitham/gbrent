@@ -103,10 +103,12 @@ body {
   position: absolute;
 }
 
-/* //.swiper-pagination  */
 /* .swiper-pagination-fraction  */
 .swiper-pagination-horizontal {
   color: white !important;
+  padding: 3px;
+  position: fixed !important;
+  bottom: 1% !important;
 }
 
 /* .swiper-button-prev::after {
