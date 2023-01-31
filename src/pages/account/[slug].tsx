@@ -1,4 +1,6 @@
-import { NotFound } from '@/components'
+import { NotFound, ReactIcon } from '@/components'
+import { classNames } from '@/utils'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 
@@ -38,12 +40,19 @@ function Account() {
     <div className="py-10">
       <div className="container_main">
         <div className="flex gap-2">
-          <div className="w-[400px] h-[500px] dark:bg-zinc-800 bg-gray-100 p-2">
-            <div className="">
-              <h1 className="font-[420] text-xl">{user.name}</h1>
-            </div>
+          <div className="w-[400px] h-[500px] dark:bg-zinc-900 bg-gray-50 p-1 border dark:border-zinc-800">
+            {/* <h1 className="font-[420] text-xl">{user.name}</h1> */}
+            <Link
+              href={'profile'}
+              className={classNames(
+                'bg-gray-100 dark:bg-zinc-800 px-4 py-[12px] text-sm text-gray-700 dark:text-gray-200 flex items-center',
+              )}
+            >
+              <ReactIcon icon="BsPersonFill" className={'w-4 h-4'} />
+              <h1 className="font-[430] pl-2">{user.name}</h1>
+            </Link>
           </div>
-          <div className="w-full p-2 dark:bg-zinc-900 bg-gray-50 h-[710px]">
+          <div className="w-full p-2 dark:bg-zinc-900 bg-gray-50 h-[710px] border dark:border-zinc-800">
             <h1 className="font-bold text-xl pb-3">Page - {user.name}</h1>
           </div>
         </div>
