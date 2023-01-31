@@ -16,9 +16,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/effect-fade'
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper'
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper'
 import Image from 'next/image'
 
 export function Hero() {
@@ -33,7 +34,8 @@ export function Hero() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination, Autoplay, Navigation]}
+        effect={'fade'}
+        modules={[EffectFade, Pagination, Autoplay, Navigation]}
         navigation={false}
         className="mySwiper"
         loop={true}
