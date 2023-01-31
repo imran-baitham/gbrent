@@ -12,4 +12,25 @@
 8.
 9.
 
-<!-- pagination={{ type: "fraction" }} -->
+```js
+
+// pagination with index
+const pagination = {
+    clickable: true,
+  renderBullet: function (index: any, className: any) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>'
+  },
+}
+pagination = { pagination }
+// pagination
+pagination={{ type: "fraction" }}
+
+```
+
+```js
+<select value={theme} onChange={(e) => setTheme(e.target.value)}>
+  <option value="system">System</option>
+  <option value="dark">Dark</option>
+  <option value="light">Light</option>
+</select>
+```

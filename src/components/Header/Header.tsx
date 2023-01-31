@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { ReactIcon, Icon, Badge, Profile } from '../index'
+import { ReactIcon, Icon, Badge, Profile, Button, Category } from '../index'
 import { classNames } from '@/utils'
 import { HomeWareItems, Navigation } from '@/mock'
 
@@ -60,21 +60,37 @@ export function Header() {
           </div>
         </div>
       </header>
-      <div className="hidden lg:flex w-full justify-center items-center p-3 bg-gray-100 dark:bg-zinc-800">
-        <div className="">
-          {Navigation.map((link, index) => {
-            return (
-              <Link
-                href={link.url}
-                key={index}
-                className={'mx-3 font-[450] text-md capitalize'}
-              >
-                {link.name}
-              </Link>
-            )
-          })}
+      {/* Navigation List */}
+      <div className="bg-gray-100 dark:bg-zinc-800">
+        <div className="container_main hidden lg:flex w-full justify-between items-center p-1">
+          <div className="flex items-center">
+            <Category />
+            <div>
+              {Navigation.map((link, index) => {
+                return (
+                  <Link
+                    href={link.url}
+                    key={index}
+                    className={'mx-2 xl:mx-3 font-[450] text-md capitalize'}
+                  >
+                    {link.name}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+          <div>
+            <Button
+              sm
+              onClick={() => alert('login first')}
+              className={'font-[900] text-[15px] border border-zinc-400'}
+            >
+              Rent Out
+            </Button>
+          </div>
         </div>
       </div>
+
       <motion.div
         animate={search ? 'open' : 'close'}
         transition={{ duration: 0.4 }}
@@ -127,11 +143,3 @@ export function Header() {
     </>
   )
 }
-
-/* 
-    <select value={theme} onChange={e => setTheme(e.target.value)}>
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
-*/

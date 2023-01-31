@@ -24,3 +24,4 @@ export * from "./Reusable/CategoryBox/CategoryBox";
 export * from "./Reusable/HowWork/Works";
 export * from "./Reusable/NoFound/NotFound";
 export * from "./Reusable/Carousel/Carousel";
+export * from "./Reusable/Category/Category";

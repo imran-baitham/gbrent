@@ -47,11 +47,9 @@ export default function Home() {
           <Budget />
         </div> */}
 
-        <div className="py-7">
+        <div className="pt-10">
           <div className="container_main">
-            <h1 className="pb-6 md:pb-9 font-bold text-xl md:text-2xl">
-              Best Rentles
-            </h1>
+            <h1 className="pb-6 font-bold text-xl md:text-2xl">Best Rentles</h1>
             <ProductCard ProductData={MOCKPRODUCTS} />
             <ProductCard ProductData={MOCKPRODUCTS} />
           </div>
