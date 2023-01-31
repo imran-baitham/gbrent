@@ -9,7 +9,6 @@ import 'swiper/css/navigation'
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper'
 import Image from 'next/image'
-import { HomeWareItems, MockData } from '@/mock'
 import { ReactIcon } from '../../index'
 
 interface dataProps {

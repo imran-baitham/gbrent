@@ -10,7 +10,6 @@ import {
   Subscribe,
   HowWorks,
   ProductCard,
-  Carousel,
 } from '@/components'
 import { RentTags } from '@/mock'
 import { MOCKPRODUCTS } from '@/mock'
@@ -33,20 +32,20 @@ export default function Home() {
       </Head>
       <main className="w-full">
         <Hero />
-        <div className="md:py-10 container_main">
+        {/* <div className="md:py-10 container_main">
           <div className="pt-3 md:pt-0 pb-6 md:pb-9 ">
             <h1 className="font-bold text-xl md:text-2xl">HOW IT WORKS</h1>
             <p>Quick brief on how simple yet powerful Rentable is</p>
           </div>
           <HowWorks />
-        </div>
-        <Features />
-        <div className="md:py-10 container_main">
+        </div> */}
+        {/* <Features /> */}
+        {/* <div className="md:py-10 container_main">
           <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
             What are you looking
           </h1> 
           <Budget />
-        </div>
+        </div> */}
 
         <div className="py-7">
           <div className="container_main">
@@ -58,7 +57,7 @@ export default function Home() {
           </div>
         </div>
 
-        <GenericCard />
+        {/* <GenericCard /> */}
         <SiderCard />
         <Notify />
         <div className="md:py-10 container_main">
@@ -78,8 +77,7 @@ export default function Home() {
             })}
           </div>
         </div>
-        {/* <Carousel /> */}
-        <Subscribe />
+        {/* <Subscribe /> */}
       </main>
     </>
   )
