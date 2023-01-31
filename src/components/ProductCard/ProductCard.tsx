@@ -11,14 +11,16 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { ReactIcon } from '../ReactIcon/ReactIcon'
 import { Icon } from '../Reusable/Icon/Icon'
-import Link from 'next/link'
 import { StaticProps } from '@/utils'
+import { useRouter } from 'next/router'
 
 interface RatingProps {
   rating: number[]
 }
 
 export function ProductCard({ ProductData }: StaticProps) {
+  const router = useRouter()
+
   return (
     <div>
       <Swiper
@@ -46,54 +48,61 @@ export function ProductCard({ ProductData }: StaticProps) {
       >
         {ProductData?.map((item, index) => {
           return (
-            <SwiperSlide key={index}>
-              <Link href={item.slug}>
-                <div className="mb-10 rounded-sm bg-gray-100 dark:bg-zinc-800 mt-3">
-                  <div className="h-[120px] md:h-[160px] w-full relative">
-                    <Image
-                      layout="fill"
-                      src={item.productIMG}
-                      alt={item.productname}
-                      className={
-                        'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-sm'
-                      }
-                    />
-                    <button className="font-bold absolute right-1 bottom-1 bg-black text-white overflow-hidden z-10 px-1 text-[12px]">
-                      Rs {item.productprice}
-                    </button>
-                  </div>
-                  <div className="p-3 flex justify-between items-center">
-                    <div className="w-full">
-                      <div className="flex justify-between">
-                        <span className="text-black dark:text-white text-[10px]">
-                          {item.category}
-                        </span>
-                        <span className="text-black dark:text-white text-[10px]">
-                          {item.availability}
-                        </span>
-                      </div>
-                      <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold py-1">
-                        {item.productname}
-                      </h1>
-                      <div className="py-1 flex items-center justify-between">
-                        <div className="flex items-center w-full">
-                          <ReactIcon
-                            icon="HiLocationMarker"
-                            className="w-3 h-3"
-                          />
-                          <h3 className="pl-1 text-[13px]">{item.location}</h3>
-                        </div>
-                        <div className="flex justify-end items-center w-full">
-                          <Icon icon="BsHeart" clsx="p-[4px] h-6 w-6" />
-                        </div>
-                      </div>
-                      <h5>
-                        <Review rating={[1, 2, 3, 4, 5]} />
-                      </h5>
+            <SwiperSlide
+              key={index}
+              onClick={() => router.push(`${item.slug}`)}
+            >
+              <div className="mb-10 rounded-sm bg-gray-100 dark:bg-zinc-800 mt-3 cursor-pointer">
+                <div className="h-[120px] md:h-[160px] w-full relative">
+                  <Image
+                    layout="fill"
+                    src={item.productIMG}
+                    alt={item.productname}
+                    className={
+                      'border-[1px] border-gray-100 dark:border-zinc-800 rounded-t-sm'
+                    }
+                  />
+                  <button className="font-bold absolute right-1 bottom-1 bg-black text-white overflow-hidden z-10 px-1 text-[12px]">
+                    Rs {item.productprice}
+                  </button>
+                </div>
+                <div className="p-3 flex justify-between items-center">
+                  <div className="w-full">
+                    <div className="flex justify-between">
+                      <span className="text-black dark:text-white text-[10px]">
+                        {item.category}
+                      </span>
+                      <span className="text-black dark:text-white text-[10px]">
+                        {item.availability}
+                      </span>
                     </div>
+                    <h1 className="rounded-sm uppercase text-[15px] md:text-[16px] font-bold py-1">
+                      {item.productname}
+                    </h1>
+                    <div className="py-1 flex items-center justify-between">
+                      <div className="flex items-center w-full">
+                        <ReactIcon
+                          icon="HiLocationMarker"
+                          className="w-3 h-3"
+                        />
+                        <h3 className="pl-1 text-[13px]">{item.location}</h3>
+                      </div>
+                      <div
+                        className="flex justify-end items-center w-full"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <Icon
+                          icon="BsHeart"
+                          clsx="p-[0px] h-9 w-9 border-none"
+                        />
+                      </div>
+                    </div>
+                    <h5>
+                      <Review rating={[1, 2, 3, 4, 5]} />
+                    </h5>
                   </div>
                 </div>
-              </Link>
+              </div>
             </SwiperSlide>
           )
         })}
