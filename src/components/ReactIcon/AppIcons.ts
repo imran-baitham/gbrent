@@ -228,4 +228,5 @@ export { RiLogoutBoxLine } from "@react-icons/all-files/ri/RiLogoutBoxLine"; // 
 export { IoMdSettings } from "@react-icons/all-files/io/IoMdSettings"; // Settings
 export { AiFillFlag } from "@react-icons/all-files/ai/AiFillFlag"; // Flag Report
 
+export { BsArrowsFullscreen } from "@react-icons/all-files/bs/BsArrowsFullscreen"; // Flag Report
 

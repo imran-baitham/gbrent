@@ -9,15 +9,30 @@ import 'swiper/css/navigation'
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper'
 import Image from 'next/image'
-import { HomeWareItems } from '@/mock'
+import { HomeWareItems, MockData } from '@/mock'
 import { ReactIcon } from '../../index'
 
-export function Carousel() {
+interface dataProps {
+  image: any
+  alt: String
+}
+
+interface CarouselProps {
+  data?: dataProps[]
+  view?: boolean
+  serView: (e: boolean) => void
+}
+
+export function Carousel({ view, serView, data }: CarouselProps) {
   return (
-    <div className="bg-[rgba(0,0,0,0.9)] w-full h-screen flex items-center justify-center fixed top-0 left-0 right-0 z-30">
+    <div className="bg-[rgba(0,0,0,0.8)] w-full h-screen flex items-center justify-center fixed top-0 left-0 right-0 z-30">
       <div className="md:w-[1400px] w-full">
-        <button className="absolute right-2 top-2 bg-white p-2 rounded-full">
-          <ReactIcon icon="VscClose" className="w-5 h-5" />
+        <button className="absolute right-2 top-2 bg-white p-1 rounded-full">
+          <ReactIcon
+            icon="VscClose"
+            className="w-5 h-5 text-black"
+            onClick={() => serView(false)}
+          />
         </button>
         <Swiper
           slidesPerView={1}
@@ -29,12 +44,12 @@ export function Carousel() {
           loopFillGroupWithBlank={true}
           navigation={true}
         >
-          {HomeWareItems.map((item, index) => {
+          {data?.map((item, index) => {
             return (
               <SwiperSlide key={index}>
                 <div className="mb-12">
                   <div className="w-full h-[230px] md:w-[800px] md:h-[500px] m-auto relative">
-                    <Image layout="fill" src={item.image} alt={item.name} />
+                    <Image layout="fill" src={item.image} alt={`${item.alt}`} />
                   </div>
                 </div>
               </SwiperSlide>

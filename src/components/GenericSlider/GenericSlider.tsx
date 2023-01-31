@@ -13,6 +13,8 @@ import 'swiper/css/thumbs'
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper'
 import Image from 'next/image'
+import { ReactIcon } from '../ReactIcon/ReactIcon'
+import { Carousel } from '../Reusable/Carousel/Carousel'
 
 let MockData = [
   { image: images, alt: 'images' },
@@ -32,12 +34,13 @@ interface GenericSliderProps {
 
 export function GenericSlider({ data }: GenericSliderProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null)
+  const [view, setView] = useState<boolean>(false)
 
   let sliders = data ? data : MockData
 
   return (
-    <div>
-      <div className="border dark:border-zinc-700">
+    <div className="">
+      <div className="group border dark:border-zinc-700">
         <Swiper
           spaceBetween={10}
           navigation={true}
@@ -63,6 +66,13 @@ export function GenericSlider({ data }: GenericSliderProps) {
               </SwiperSlide>
             )
           })}
+          {/* View Images Modal Button */}
+          <button
+            onClick={() => setView((e) => !e)}
+            className="absolute right-2 bottom-2 p-1 z-10 bg-yellow-600 md:hidden md:group-hover:block cursor-pointer text-white"
+          >
+            <ReactIcon icon="BsArrowsFullscreen" className="md:w-5 md:h-5" />
+          </button>
         </Swiper>
       </div>
       <div className="mt-3">
@@ -88,6 +98,7 @@ export function GenericSlider({ data }: GenericSliderProps) {
           })}
         </Swiper>
       </div>
+      {view && <Carousel serView={setView} data={sliders} />}
     </div>
   )
 }
