@@ -103,8 +103,8 @@ body {
   position: absolute;
 }
 
-/* .swiper-pagination-fraction  */
-.swiper-pagination-horizontal {
+/* .swiper-pagination-fraction  swiper-pagination-horizontal  */
+.swiper-pagination-fraction {
   color: white !important;
   padding: 3px;
   position: fixed !important;

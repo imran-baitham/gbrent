@@ -11,11 +11,15 @@ interface TypeProps {
 }
 
 const Signup: TypeProps[] = [
-  { name: 'Profile', href: '#', icon: 'BsPersonFill' },
-  { name: 'My Uplaods', href: '#', icon: 'RiFileUploadFill' },
-  { name: 'Settings', href: '#', icon: 'IoMdSettings' },
-  { name: 'Report Problem', href: '#', icon: 'AiFillFlag' },
-  { name: 'Sign out', href: '#', icon: 'RiLogoutBoxLine' },
+  { name: 'Profile', href: '/account/profile', icon: 'BsPersonFill' },
+  { name: 'My Uplaods', href: '/account/myuplaods', icon: 'RiFileUploadFill' },
+  { name: 'Settings', href: '/account/settings', icon: 'IoMdSettings' },
+  {
+    name: 'Report Problem',
+    href: '/account/report-problem',
+    icon: 'AiFillFlag',
+  },
+  { name: 'Sign out', href: '/', icon: 'RiLogoutBoxLine' },
 ]
 
 const Login: TypeProps[] = [
