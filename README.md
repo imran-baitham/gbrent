@@ -1,4 +1,4 @@
-# HomeWare Ecommerce Website
+# gbrent.xyz
 
 ## packages
 
@@ -8,9 +8,11 @@
 4. Swiper - Slider
 5. ReactIcons - website icons
 6. TypeScript - product type
-7.
-8.
-9.
+7. headlessui - Tabs
+8. vercel/analytics - WebSite Traffic
+9. sharp - don't no
+
+# Ecommerce Website
 
 ```js
 
