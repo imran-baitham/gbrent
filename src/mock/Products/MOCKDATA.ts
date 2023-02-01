@@ -1,589 +1,587 @@
 import { ProductProps } from "@/utils";
 
 export let MOCKPRODUCTS: ProductProps[] = [
+  // ============================== real like ======== Cars
   {
-    id: 1,
-    slug: "clocks",
+    id: 103,
+    slug: "toyota-camry",
     productIMG:
-      "https://images.pexels.com/photos/2736542/pexels-photo-2736542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/14165941/pexels-photo-14165941.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/2736542/pexels-photo-2736542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165941/pexels-photo-14165941.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165878/pexels-photo-14165878.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165785/pexels-photo-14165785.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165725/pexels-photo-14165725.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165470/pexels-photo-14165470.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/14165582/pexels-photo-14165582.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/14165612/pexels-photo-14165612.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
     ],
-    productname: "Clocks",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 1000,
+    productname: "Toyota Camry",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 20000,
     location: "Gilgit",
     productrating: 5,
     productquantity: 1,
-    category: "clocks",
+    category: "car",
     like: 12,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
-    availability: "In Stock",
+    time: "Wednesday, 1 February 2023",
+    condition: "new",
+    availability: "In Rent",
   },
+  // ======== Camera
   {
-    id: 2,
-    slug: "table-lamps",
+    id: 105,
+    slug: "canon-eos-90D",
     productIMG:
-      "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/45889/camera-photo-camera-sony-alpha-7-sony-45889.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/45889/camera-photo-camera-sony-alpha-7-sony-45889.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/320617/pexels-photo-320617.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/442573/pexels-photo-442573.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/927444/pexels-photo-927444.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Table lamps",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 11000,
-    location: "Gilgit",
+    productname: "Canon EOS 90D",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 1300,
+    location: "Nagar",
     productrating: 5,
     productquantity: 1,
-    category: "Tablelamps",
+    category: "camera",
     like: 12,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
+    time: "Wednesday, 1 February 2023",
+    condition: "new",
     availability: "In Stock",
   },
+  // =========== Homes
   {
-    id: 3,
-    slug: "cushions",
+    id: 106,
+    slug: "home-rosewood",
     productIMG:
-      "https://images.pexels.com/photos/706144/pexels-photo-706144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/706144/pexels-photo-706144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1444424/pexels-photo-1444424.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Cushions",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 21000,
-    location: "Gilgit",
+    productname: "Home Rosewood",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 1130,
+    location: "Karachi",
     productrating: 5,
     productquantity: 1,
-    category: "cushions",
-    like: 12,
+    category: "home",
+    like: 8,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
+    time: "Wednesday, 1 February 2020",
     condition: "old",
-    availability: "In Stock",
+    availability: "available for rent",
   },
+  // ====== office space
   {
-    id: 4,
-    slug: "books",
+    id: 108,
+    slug: "office-rent",
     productIMG:
-      "https://images.pexels.com/photos/1543447/pexels-photo-1543447.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/2451616/pexels-photo-2451616.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/1543447/pexels-photo-1543447.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://images.pexels.com/photos/2451616/pexels-photo-2451616.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/4238478/pexels-photo-4238478.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/2041629/pexels-photo-2041629.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/4238478/pexels-photo-4238478.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Books",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 100,
-    location: "Gilgit",
-    productrating: 5,
+    productname: "Rent Office",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 1100,
+    location: "Hunza",
+    productrating: 3,
     productquantity: 1,
-    category: "Books",
-    like: 12,
+    category: "office",
+    like: 8,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
+    time: "Wednesday, 1 February 2020",
     condition: "old",
-    availability: "In Stock",
+    availability: "available for rent",
   },
+  // ======== cloths
   {
-    id: 5,
-    slug: "mirrors",
+    id: 110,
+    slug: "rent-clothes",
     productIMG:
-      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Mirrors",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 16000,
-    location: "Gilgit",
-    productrating: 5,
-    productquantity: 1,
-    category: "Mirrors",
-    like: 12,
-    ownernumber: 923554529168,
-    owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
-    availability: "In Stock",
-  },
-  {
-    id: 6,
-    slug: "indoor-plants",
-    productIMG:
-      "https://images.pexels.com/photos/1173651/pexels-photo-1173651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    productIMGS: [
-      {
-        image:
-          "https://images.pexels.com/photos/1173651/pexels-photo-1173651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-    ],
-    productname: "Indoor plants",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
+    productname: "Rent Clothes",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
     productprice: 500,
     location: "Gilgit",
-    productrating: 5,
+    productrating: 3,
     productquantity: 1,
-    category: "Indoorplants",
-    like: 12,
+    category: "clothes",
+    like: 8,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
+    time: "Wednesday, 1 February 2020",
     condition: "old",
-    availability: "In Stock",
+    availability: "available for rent",
   },
+  // ========= Party and waddings
   {
-    id: 7,
-    slug: "photo-frames",
+    id: 111,
+    slug: "Party-and-Wedding",
     productIMG:
-      "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/6224982/pexels-photo-6224982.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/13567860/pexels-photo-13567860.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Photo frames",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
+    productname: "Party and Wedding",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 500,
+    location: "Gilgit",
+    productrating: 3,
+    productquantity: 1,
+    category: "partys",
+    like: 8,
+    ownernumber: 923554529168,
+    owneremail: "imranbaitham001@gmail.com",
+    time: "Wednesday, 1 February 2023",
+    condition: "old wares",
+    availability: "available for rent",
+  },
+  // ========= Trips
+  {
+    id: 112,
+    slug: "trip-ware",
+    productIMG:
+      "https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    productIMGS: [
+      {
+        image:
+          "https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/2409681/pexels-photo-2409681.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/1448736/pexels-photo-1448736.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+    ],
+    productname: "Trip Ware",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
     productprice: 5000,
-    location: "Gilgit",
-    productrating: 5,
+    location: "hunza",
+    productrating: 3,
     productquantity: 1,
-    category: "photoframes",
-    like: 12,
+    category: "trip",
+    like: 8,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
-    availability: "In Stock",
+    time: "Wednesday, 1 February 2023",
+    condition: "old wares",
+    availability: "available for rent",
   },
+  // ========= bikes
   {
-    id: 8,
-    slug: "sheepskins",
+    id: 112,
+    slug: "honda-bike-125",
     productIMG:
-      "https://images.pexels.com/photos/706137/pexels-photo-706137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/706137/pexels-photo-706137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1715184/pexels-photo-1715184.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Sheepskins",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 10000,
-    location: "Gilgit",
-    productrating: 5,
+    productname: "Honda Bike 125",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 5000,
+    location: "jutyal",
+    productrating: 3,
     productquantity: 1,
-    category: "Sheepskins",
-    like: 12,
+    category: "bike",
+    like: 8,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
-    availability: "In Stock",
+    time: "Wednesday, 1 February 2023",
+    condition: "old wares",
+    availability: "available for rent",
   },
+  // ================== hotels rooms
   {
-    id: 9,
-    slug: "pinboards",
+    id: 109,
+    slug: "k2-rent-hotel",
     productIMG:
-      "https://images.pexels.com/photos/1909752/pexels-photo-1909752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/1909752/pexels-photo-1909752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/277572/pexels-photo-277572.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Pinboards",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
+    productname: "K2 Rent Hotel",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
     productprice: 5500,
-    location: "Gilgit",
-    productrating: 5,
+    location: "Mehdi Abad",
+    productrating: 3,
     productquantity: 1,
-    category: "Pinboards",
-    like: 12,
+    category: "hotel",
+    like: 8,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
+    time: "Wednesday, 1 February 2020",
     condition: "old",
-    availability: "In Stock",
+    availability: "available for rent",
   },
+  // ============= more
   {
-    id: 10,
-    slug: "timber-decor",
+    id: 100,
+    slug: "honda-civic",
     productIMG:
-      "https://images.pexels.com/photos/2079436/pexels-photo-2079436.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/14719364/pexels-photo-14719364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/2079436/pexels-photo-2079436.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://images.pexels.com/photos/14719364/pexels-photo-14719364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14719372/pexels-photo-14719372.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14692379/pexels-photo-14692379.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14692371/pexels-photo-14692371.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14692374/pexels-photo-14692374.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
     ],
-    productname: "Timber decor",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 90000,
-    location: "Gilgit",
+    productname: "Honda Civic",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 3000,
+    location: "Danyore",
     productrating: 5,
     productquantity: 1,
-    category: "Timber decor",
+    category: "car",
     like: 12,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
-    availability: "In Stock",
+    time: "Wednesday, 1 February 2023",
+    condition: "new",
+    availability: "In Rent",
   },
   {
-    id: 11,
-    slug: "oil-burners",
+    id: 104,
+    slug: "canon-dlsr",
     productIMG:
-      "https://images.pexels.com/photos/1239298/pexels-photo-1239298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/248519/pexels-photo-248519.jpeg?auto=compress&cs=tinysrgb&w=1600",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/1239298/pexels-photo-1239298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/248519/pexels-photo-248519.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/320617/pexels-photo-320617.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/442573/pexels-photo-442573.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "images",
-      },
-      {
-        image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/927444/pexels-photo-927444.jpeg?auto=compress&cs=tinysrgb&w=1600",
         alt: "images",
       },
     ],
-    productname: "Oil burners",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 100,
-    location: "Gilgit",
+    productname: "Canon DLSR",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 1300,
+    location: "Nagar",
     productrating: 5,
     productquantity: 1,
-    category: "Oilburners",
+    category: "camera",
     like: 12,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
+    time: "Wednesday, 1 February 2023",
+    condition: "new",
     availability: "In Stock",
   },
   {
-    id: 12,
-    slug: "throw-rugs",
+    id: 101,
+    slug: "BMW-3-Series",
     productIMG:
-      "https://images.pexels.com/photos/2062427/pexels-photo-2062427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/14165157/pexels-photo-14165157.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     productIMGS: [
       {
         image:
-          "https://images.pexels.com/photos/2062427/pexels-photo-2062427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165157/pexels-photo-14165157.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/4560117/pexels-photo-4560117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165138/pexels-photo-14165138.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5302929/pexels-photo-5302929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165109/pexels-photo-14165109.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/5531015/pexels-photo-5531015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165130/pexels-photo-14165130.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
       {
         image:
-          "https://images.pexels.com/photos/8489323/pexels-photo-8489323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/14165132/pexels-photo-14165132.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/14165138/pexels-photo-14165138.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
         alt: "images",
       },
     ],
-    productname: "Throw rugs",
-    productdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book.`,
-    productprice: 1500,
-    location: "Gilgit",
+    productname: "BMW 3 Series",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 13000,
+    location: "Danyore",
     productrating: 5,
     productquantity: 1,
-    category: "Throwrugs",
+    category: "car",
     like: 12,
     ownernumber: 923554529168,
     owneremail: "imranbaitham001@gmail.com",
-    time: "Monday, 24 January 2023 (GMT+5)",
-    condition: "old",
+    time: "Wednesday, 1 February 2023",
+    condition: "new",
     availability: "In Stock",
   },
-];
-
-export let MockProducts = [
   {
-    id: 1,
-    name: "Pure petrol Sport car",
-    slug: "Pure-petrol-Sport-car",
-    datails:
-      "Best plot for rent  available for as a location for rent  available for as a location ",
-    owner: {
-      id: 88843214,
-      login: "bryanw6d",
-      type: "User",
-    },
-    charge: "Per day",
-    price: 1000,
-    email: "imranbaitham001@gmail,com",
-    number: "03554529168",
-    status: "available",
-    address: "Hunza aliabad",
-    city: "Gilgit",
-    firstName: "imran",
-    lastName: "baitham",
-    rate: "2.4",
-    time: "2 hours",
-    star: false,
-    login: true,
-    Condition: "New",
-    availability: "In Stock",
-    member: "Member since july 2022",
-    productApiUrl:
-      "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true",
+    id: 107,
+    slug: "north-aims",
+    productIMG:
+      "https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    productIMGS: [
+      {
+        image:
+          "https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4238478/pexels-photo-4238478.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4240610/pexels-photo-4240610.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+      {
+        image:
+          "https://images.pexels.com/photos/4238478/pexels-photo-4238478.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        alt: "images",
+      },
+    ],
+    productname: "North Aims",
+    productdescription: `Results 1 - 25 of 292 — There are 292 used Toyota Prado TZ starting at Rs. PKR 2200000. ... Sell up to 10x faster; Get your Ad noticed by 50 lac+ Buyers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an`,
+    productprice: 1000,
+    location: "Baig Market",
+    productrating: 3,
+    productquantity: 1,
+    category: "office",
+    like: 8,
+    ownernumber: 923554529168,
+    owneremail: "imranbaitham001@gmail.com",
+    time: "Wednesday, 1 February 2020",
+    condition: "old",
+    availability: "available for rent",
   },
 ];
