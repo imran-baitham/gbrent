@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
-import { useRouter } from 'next/router'
 import { Heart, ReactIcon } from '@/components'
 
 interface RatingProps {
@@ -16,6 +15,7 @@ interface ProductProps {
   category: string
   availability: string
   location: string
+  onClick?: () => void
 }
 
 export function Card({
@@ -25,11 +25,13 @@ export function Card({
   category,
   availability,
   location,
+  onClick,
 }: ProductProps) {
-  const router = useRouter()
-
   return (
-    <div className="mb-10 rounded-sm bg-gray-100 dark:bg-zinc-800 mt-3 cursor-pointer">
+    <div
+      className="mb-10 rounded-sm bg-gray-100 dark:bg-zinc-800 mt-3 cursor-pointer"
+      onClick={onClick}
+    >
       <div className="h-[120px] md:h-[160px] w-full relative">
         <Image
           layout="fill"

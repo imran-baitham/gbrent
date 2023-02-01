@@ -1,18 +1,17 @@
 import { classNames } from '@/utils'
-import Link from 'next/link'
 import React from 'react'
 
 interface BadgeProps {
   title: string
-  url: string
   size?: 'sm' | 'lg' | 'xl'
   radius?: 'sm' | 'lg' | 'full'
   variant?: 'success' | 'warning' | 'error' | 'info' | 'primary'
   className?: string
+  onClick?: () => void
 }
 
 export function Badge(props: BadgeProps) {
-  const { title, url, size, radius, variant, className } = props
+  const { title, onClick, size, radius, variant, className } = props
 
   const bgClasses = classNames(
     variant === 'info' ? 'bg-blue-50' : '',
@@ -35,18 +34,19 @@ export function Badge(props: BadgeProps) {
   )
 
   return (
-    <Link href={url}>
+    <>
       <div
         className={classNames(
           bgClasses,
           radiusClasses,
           sizeClasses,
           className ||
-            'text-gray-800 dark:text-zinc-100 border-[2px] border-gray-200 dark:border-zinc-700 md:px-5 px-2 py-1 md:mr-2 mr-1 md:my-2 my-1',
+            'cursor-pointer text-gray-800 dark:text-zinc-100 border-[2px] border-gray-200 dark:border-zinc-700 md:px-5 px-2 py-1 md:mr-2 mr-1 md:my-2 my-1',
         )}
+        onClick={onClick}
       >
         <h1 className={'textClasses'}>{title}</h1>
       </div>
-    </Link>
+    </>
   )
 }

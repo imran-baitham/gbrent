@@ -4,7 +4,9 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { ReactIcon, Icon, Badge, Profile, Button, Category } from '../index'
 import { classNames } from '@/utils'
-import { HomeWareItems, Navigation } from '@/mock'
+import { Navigation, MOCKPRODUCTS } from '@/mock'
+import { Search } from '../TextField/Search'
+import { useRouter } from 'next/router'
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -12,9 +14,12 @@ const variants = {
 }
 
 export function Header() {
-  const { theme, setTheme } = useTheme()
   let [isScrolled, setIsScrolled] = useState<boolean>(false)
   const [search, setSearch] = useState<boolean>(false)
+
+  // ===================================
+  const { theme, setTheme } = useTheme()
+  const router = useRouter()
 
   useEffect(() => {
     function onScroll() {
@@ -26,6 +31,20 @@ export function Header() {
       window.removeEventListener('scroll', onScroll, {})
     }
   }, [])
+
+  // =========={ search }=============
+  const handleEnter = (data: string) => {
+    sessionStorage.setItem('search', JSON.stringify(data) as string)
+    router.push('/search-results')
+    setSearch(false)
+  }
+
+  // =========={ Popular Searches }=============
+  const handleClick = (event: any) => {
+    sessionStorage.setItem('search', JSON.stringify(event) as string)
+    router.push('/search-results')
+    setSearch(false)
+  }
 
   return (
     <>
@@ -111,23 +130,19 @@ export function Header() {
                 icon="RiSearch2Fill"
                 className="absolute top-[70px] md:top-[55px] w-6 h-6 md:w-8 md:h-8 ml-2 text-zinc-400"
               />
-              <input
-                type="search"
-                className="mt-5 md:mt-0 w-full outline-none text-xl md:text-4xl bg-transparent border-b-2 border-gray-300 dark:border-zinc-700 pl-10 md:pl-14 py-2 md:py-3 mb-7"
-                placeholder="Search our catalog"
-              />
+              <Search onEnter={handleEnter} />
             </div>
             <h1 className="font-[420] text-md md:text-xl text-yellow-500 dark:text-yellow-600 capitalize">
               Popular Searches
             </h1>
             <div className="flex flex-wrap mt-4">
-              {HomeWareItems.slice(0, 15).map((item, index) => {
+              {MOCKPRODUCTS.slice(0, 15).map((item, index) => {
                 return (
                   <Badge
                     size="lg"
-                    title={item.name}
-                    url={item.url}
+                    title={item.productname}
                     key={index}
+                    onClick={() => handleClick(item.productname)}
                   />
                 )
               })}
