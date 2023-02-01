@@ -28,7 +28,7 @@ export function Hero() {
       <Swiper
         slidesPerView={1}
         autoplay={{
-          delay: 4000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination={{

@@ -1,17 +1,20 @@
 import {
   Counter,
   GenericSlider,
+  GenericTabs,
   Heart,
   NotFound,
+  ProductCard,
   Rating,
   ReactIcon,
-  Slider,
+  Review,
+  SellerInfo,
 } from '@/components'
-import { Tabs } from '@/components/Tabs/Tabs'
 import { MOCKPRODUCTS } from '@/mock'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Head from 'next/head'
+import { Disc } from '@/components/Reusable/Disc/Disc'
 
 function Index() {
   const router = useRouter()
@@ -36,7 +39,7 @@ function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="py-20">
+      <div className="pt-20">
         <div className="container_main">
           <h1 className="font-bold text-xl pb-3">
             Product - {Product?.productname}
@@ -123,15 +126,31 @@ function Index() {
               </div>
             </div>
           </div>
+          {/* Tabs */}
           <div className="pt-12">
-            <Tabs />
+            <GenericTabs
+              tabs={[
+                {
+                  id: '1',
+                  name: 'Description',
+                  content: <Disc description={Product.productdescription} />,
+                },
+                { id: '2', name: 'Reviews', content: <Review /> },
+                {
+                  id: '3',
+                  name: 'Seller Info',
+                  content: <SellerInfo />,
+                },
+              ]}
+            />
           </div>
-          {/* <div className="py-10">
+          {/* Slider */}
+          <div className="py-10">
             <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
               Related Product
             </h1>
-            <Slider />
-          </div> */}
+            <ProductCard ProductData={MOCKPRODUCTS} />
+          </div>
         </div>
       </div>
     </>
