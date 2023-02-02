@@ -15,6 +15,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import Head from 'next/head'
 import { Disc } from '@/components/Reusable/Disc/Disc'
+import Image from 'next/image'
 
 function Index() {
   const router = useRouter()
@@ -44,12 +45,170 @@ function Index() {
           <h1 className="font-bold text-xl pb-3">
             Product - {Product?.productname}
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3">
+            <div className="col-span-2">
               <GenericSlider data={Product?.productIMGS} />
+
+              <div className="pt-12">
+                <GenericTabs
+                  tabs={[
+                    {
+                      id: '1',
+                      name: 'Description',
+                      content: (
+                        <Disc description={Product.productdescription} />
+                      ),
+                    },
+                    { id: '2', name: 'Reviews', content: <Review /> },
+                    {
+                      id: '3',
+                      name: 'Seller Info',
+                      content: <SellerInfo />,
+                    },
+                  ]}
+                />
+              </div>
             </div>
-            <div className="py-4 md:px-4">
-              <h1 className="font-[450] text-[32px]">{Product?.productname}</h1>
+            <div className=''>
+              <div className="mt-5 md:mt-0 py-3 md:px-2 md:bg-gray-50 md:dark:bg-zinc-900 md:border border-gray-100 dark:border-zinc-800">
+                {/* profile */}
+                <div className="mb-5 p-3 border dark:border-zinc-800 bg-white dark:bg-zinc-800 flex items-center">
+                  <div className="rounded-full w-[50px] h-[50px] relative">
+                    <Image
+                      src={Product?.productIMG}
+                      alt={Product.productname}
+                      layout="fill"
+                      className="rounded-full"
+                    />
+                  </div>
+                  <div className="pl-2">
+                    <h1 className="font-[420] text-xl leading-6">
+                      {Product?.productname}
+                    </h1>
+                    <p className="text-[12px]">{Product?.time}</p>
+                  </div>
+                </div>
+
+                {/* Price and name */}
+                <div className="mb-2 p-3 border dark:border-zinc-800 bg-white dark:bg-zinc-800 flex items-center justify-between">
+                  <h1 className="font-[450]">{Product.productname}</h1>
+                  <div className="flex">
+                    <del className="text-[12px]">
+                      Rs.{Product?.productprice}
+                    </del>
+                    <h1 className="pl-2 font-bold text-xl">
+                      Rs.{Product?.productprice}
+                    </h1>
+                  </div>
+                </div>
+                {/* <div className="mb-5 p-3 border dark:border-zinc-800 bg-white dark:bg-zinc-800">
+                <h1 className="font-[450] text-xl pb-2">Description</h1>
+                <p>{Product?.productdescription}</p>
+                </div> */}
+
+                {/* Product Datails */}
+                <div className="p-3 border dark:border-zinc-800 bg-white dark:bg-zinc-800">
+                  <div className="flex">
+                    <div className="pr-4">
+                      <h1 className="text-sm md:text-md text-yellow-500 font-bold">
+                        AVAILABILITY
+                      </h1>
+                      <p className="text-[10px] md:text-[13px] pt-[2px]">
+                        {Product?.availability}
+                      </p>
+                    </div>
+                    <div className="pr-4">
+                      <h1 className="text-sm md:text-md text-yellow-500 font-bold">
+                        DELIVERY
+                      </h1>
+                      <p className="text-[10px] md:text-[13px] pt-[2px]">
+                        3-5 Days
+                      </p>
+                    </div>
+                    <div className="pr-4">
+                      <h1 className="text-sm md:text-md text-yellow-500 font-bold">
+                        REVIEWS
+                      </h1>
+                      <p className="text-[10px] md:text-[13px] pt-[2px]">
+                        {Product.like.toString()} review
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* whatsapp */}
+                <div className="mb-2 mt-5 bg-[#49d467] border border-[#1d8169] dark:border-[#c1ebab]">
+                  <button
+                    className="text-black w-full text-left p-2.5 flex justify-center items-center"
+                    onClick={() =>
+                      window.open(
+                        `https://api.whatsapp.com/send/?phone=${Product?.ownernumber}&text&app_absent=0`,
+                        '_blank',
+                      )
+                    }
+                  >
+                    <ReactIcon icon="FaWhatsapp" className="w-5 h-5 mr-2" />
+                    <span className="font-[420]">WhatsApp</span>
+                  </button>
+                </div>
+                {/* number */}
+                <div className="my-2 bg-white dark:bg-zinc-800">
+                  <button
+                    className="border dark:border-zinc-700 w-full text-left px-2.5 py-3 flex justify-center items-center"
+                    onClick={() => alert(`${Product?.ownernumber}`)}
+                  >
+                    <ReactIcon icon="FiPhoneCall" className="w-5 h-5 mr-2" />
+                    <span className="font-[420]">Show Number</span>
+                  </button>
+                </div>
+
+                <div className="w-full mt-10 mb-1">
+                  <iframe
+                    src={
+                      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201.9474938410998!2d74.38750562760207!3d35.91858591298853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e6495b80b33d6f%3A0x97e334496a64f9af!2sBaig%20Market!5e0!3m2!1sen!2s!4v1675333675793!5m2!1sen!2s'
+                    }
+                    width="100%"
+                    height="250"
+                    loading="lazy"
+                    className="myMap"
+                  />
+                  <button
+                    className="bg-white dark:bg-zinc-900 w-full text-left px-2.5 py-3 text-sm flex justify-between items-center border dark:border-zinc-800"
+                    onClick={() =>
+                      window.open(
+                        'https://goo.gl/maps/D8ScqkuXJZpfEMiU8',
+                        '_blank',
+                      )
+                    }
+                  >
+                    <span>See Location</span>
+                    <ReactIcon icon="RiArrowRightSFill" className="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Tabs */}
+
+          {/* Slider */}
+          <div className="py-10">
+            <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
+              Related Product
+            </h1>
+            <ProductCard ProductData={MOCKPRODUCTS} />
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Index
+
+{
+  /*
+
+ <h1 className="font-[450] text-[32px]">{Product?.productname}</h1>
               <Rating rating={[1, 2, 3, 4, 5]} />
               <hr className="border dark:border-zinc-700 my-3" />
               <div className="flex py-6">
@@ -124,37 +283,6 @@ function Index() {
                 <ReactIcon icon="FcGoogle" className="ml-1" />
                 <ReactIcon icon="FcGoogle" className="ml-1" />
               </div>
-            </div>
-          </div>
-          {/* Tabs */}
-          <div className="pt-12">
-            <GenericTabs
-              tabs={[
-                {
-                  id: '1',
-                  name: 'Description',
-                  content: <Disc description={Product.productdescription} />,
-                },
-                { id: '2', name: 'Reviews', content: <Review /> },
-                {
-                  id: '3',
-                  name: 'Seller Info',
-                  content: <SellerInfo />,
-                },
-              ]}
-            />
-          </div>
-          {/* Slider */}
-          <div className="py-10">
-            <h1 className="pt-3 md:pt-0 pb-6 md:pb-9 font-bold text-xl md:text-2xl">
-              Related Product
-            </h1>
-            <ProductCard ProductData={MOCKPRODUCTS} />
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
 
-export default Index
+*/
+}

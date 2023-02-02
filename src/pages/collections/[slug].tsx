@@ -1,7 +1,8 @@
-import { GridCard } from '@/components'
 import React from 'react'
-import { MockData, MOCKPRODUCTS } from '@/mock'
 import Link from 'next/link'
+import Router from 'next/router'
+import { Card } from '@/components'
+import { MOCKPRODUCTS } from '@/mock'
 
 let FilterPrice = [
   { min: '0', high: '300' },
@@ -30,7 +31,7 @@ function Index() {
     <div>
       <div className="container_main py-6">
         <div className="md:flex md:gap-2">
-          <div className="py-3 w-96 border px-3 dark:border-zinc-700">
+          <div className="py-3 md:w-96 border px-3 dark:border-zinc-700 mb-5 md:mb-0">
             <h1 className="font-bold text-2xl pt-1">Filter by</h1>
             <hr className="border dark:border-zinc-700 my-3" />
             {/* Calculations */}
@@ -86,15 +87,18 @@ function Index() {
             </div>
           </div>
           <div className="w-full border dark:border-zinc-700 px-3 py-3">
-            <div className="grid md:grid-cols-3 gap-2">
-              {MockData.map((data, index) => {
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
+              {MOCKPRODUCTS.map((data, index) => {
                 return (
-                  <GridCard
+                  <Card
                     key={index}
-                    url={data.url}
-                    image={data.image}
-                    title={data.title}
-                    subtitle={data.subtitle}
+                    productIMG={data.productIMG}
+                    productname={data.productname}
+                    productprice={data.productprice}
+                    category={data.category}
+                    availability={data.availability}
+                    location={data.location}
+                    onClick={() => Router.push(data.slug)}
                   />
                 )
               })}

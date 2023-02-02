@@ -30,3 +30,4 @@ export * from "./Reusable/Category/Category";
 export * from "./Reusable/Disc/Disc";
 export * from "./Reusable/Review/Review";
 export * from "./Reusable/SellerInfo/SellerInfo";
+export * from "./Reusable/Card/Card";

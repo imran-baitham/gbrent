@@ -230,3 +230,5 @@ export { AiFillFlag } from "@react-icons/all-files/ai/AiFillFlag"; // Flag Repor
 
 export { BsArrowsFullscreen } from "@react-icons/all-files/bs/BsArrowsFullscreen"; // Flag Report
 
+export { FiPhoneCall } from "@react-icons/all-files/fi/FiPhoneCall"; // Call Phone
+

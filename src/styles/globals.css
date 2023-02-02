@@ -136,3 +136,7 @@ body {
 .shaper {
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
+
+.myMap {
+  filter: grayscale(100%) invert(100%)
+}

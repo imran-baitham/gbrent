@@ -54,8 +54,8 @@ export function GenericSlider({ data }: GenericSliderProps) {
           {sliders.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="p-[22px]">
-                  <div className="relative h-[220px] md:h-[350px] md:w-full">
+                <div className="md:p-[22px] p-[20px]">
+                  <div className="relative h-[200px] sm:h-[380px] md:h-[380px] lg:h-[470px] md:w-full">
                     <Image
                       src={item?.image}
                       alt={`${item.alt}`}
@@ -78,7 +78,7 @@ export function GenericSlider({ data }: GenericSliderProps) {
       <div className="mt-3">
         <Swiper
           onSwiper={setThumbsSwiper}
-          spaceBetween={10}
+          spaceBetween={8}
           slidesPerView={4}
           freeMode={true}
           watchSlidesProgress={true}
@@ -88,8 +88,8 @@ export function GenericSlider({ data }: GenericSliderProps) {
           {sliders.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="border dark:border-zinc-700 md:p-2 p-1">
-                  <div className="relative md:h-[80px] h-[50px] w-full">
+                <div className="border dark:border-zinc-700 md:p-2 p-[2px]">
+                  <div className="relative h-[45px] sm:h-[90px] md:h-[80px] lg:h-[110px] w-full">
                     <Image src={item.image} alt={`${item.alt}`} layout="fill" />
                   </div>
                 </div>

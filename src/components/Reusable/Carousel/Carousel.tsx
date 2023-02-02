@@ -47,7 +47,7 @@ export function Carousel({ view, serView, data }: CarouselProps) {
             return (
               <SwiperSlide key={index}>
                 <div className=""> {/*  For Pagination 1/5  */}
-                  <div className="w-full h-[230px] md:w-[800px] md:h-[500px] m-auto relative">
+                  <div className="w-full h-[230px] lg:w-[800px] lg:h-[500px] xl:w-[1000px] xl:h-[700px] m-auto relative">
                     <Image layout="fill" src={item.image} alt={`${item.alt}`} />
                   </div>
                 </div>
