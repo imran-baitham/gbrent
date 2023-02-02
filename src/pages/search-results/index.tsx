@@ -30,12 +30,14 @@ function Index() {
           </h1>
         </div>
         <hr className="border-2 border-yellow-500 mb-5" />
-        <div className="grid grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
           {filter
-            .filter((name) =>
-              name.productname
-                .toLowerCase()
-                .includes(searchValue?.toLowerCase() as string),
+            .filter(
+              (name) =>
+                name.productname &&
+                name.category
+                  .toLowerCase()
+                  .includes(searchValue?.toLowerCase() as string),
             )
             .map((item, index) => {
               return (

@@ -16,6 +16,17 @@ const variants = {
 export function Header() {
   let [isScrolled, setIsScrolled] = useState<boolean>(false)
   const [search, setSearch] = useState<boolean>(false)
+  const [login, setLogin] = useState<boolean>(false)
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    let userLogin = localStorage.getItem('user')
+    if (userLogin) {
+      setLogin(true)
+    } else {
+      setLogin(false)
+    }
+  })
 
   // ===================================
   const { theme, setTheme } = useTheme()
@@ -44,6 +55,15 @@ export function Header() {
     sessionStorage.setItem('search', JSON.stringify(event) as string)
     router.push('/search-results')
     setSearch(false)
+  }
+  // =========={ Rent } =============
+
+  const handleRent = () => {
+    if (login) {
+      router.push('/account/myuplaods')
+    } else {
+      router.push('/account/login')
+    }
   }
 
   return (
@@ -101,7 +121,7 @@ export function Header() {
           <div>
             <Button
               sm
-              onClick={() => alert('login first')}
+              onClick={() => handleRent()}
               className={'font-[900] text-[15px] border border-zinc-400'}
             >
               Rent Out
