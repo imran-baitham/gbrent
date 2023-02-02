@@ -26,10 +26,10 @@ export function GenericTabs({ tabs }: StickyPanelProps) {
         <ul className="flex space-x-2">
           {tabs.map((tab, index) => (
             <li
-              key={tab.name}
+              key={index}
               onClick={() => setOpenTab(tab.name)}
               className={classNames(
-                'inline-block px-4 py-2 text-gray-600 bg-white dark:bg-zinc-800 dark:text-white rounded shadow cursor-pointer',
+                'w-full md:w-auto inline-block px-4 py-2 text-gray-600 bg-white dark:bg-zinc-800 dark:text-white rounded shadow cursor-pointer text-sm md:text-[16px]',
               )}
             >
               {tab.name}

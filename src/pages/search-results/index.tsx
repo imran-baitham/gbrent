@@ -8,6 +8,7 @@ function Index() {
   const [searchValue, setSearchValue] = useState<string>()
   const [filter] = useState(MOCKPRODUCTS)
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const items = JSON.parse(sessionStorage.getItem('search') as string)
     if (items) {

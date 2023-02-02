@@ -30,7 +30,7 @@ function Index() {
       },
     })
     const data = await response.json()
-    router.push('/login')
+    router.push('/account/login')
   }
 
   return (

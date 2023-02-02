@@ -24,7 +24,7 @@ const Index = () => {
 
   useEffect(() => {
     getData().then((people) => setUsers(people))
-  }, [])
+  })
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     let check = user.filter((user: any) => {
@@ -38,12 +38,6 @@ const Index = () => {
       alert('user not found')
     }
   }
-
-  useEffect(() => {
-    window.onload = (event) => {
-      console.log(event, 'page is fully loaded')
-    }
-  })
 
   return (
     <div>
@@ -84,7 +78,8 @@ const Index = () => {
                     })}
                     type="text"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm focus:ring-primary-600 focus:border-primary-600 block w-full p-4 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                    placeholder="name@gmail.com"
+                    placeholder="demo@gmail.com"
+                    //placeholder="name@gmail.com"
                   />
                   <div className="block mb-2 text-[13px] text-red-900 dark:text-red-400 pt-1">
                     {errors?.email?.type === 'required' && (
@@ -122,7 +117,8 @@ const Index = () => {
                     })}
                     type="password"
                     id="password"
-                    placeholder="••••••••"
+                    //placeholder="••••••••"
+                    placeholder="123456"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm  focus:ring-primary-600 focus:border-primary-600 block w-full p-4 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                   />
                   <div className="block mb-2 text-[13px] text-red-900 dark:text-red-400 pt-1">
