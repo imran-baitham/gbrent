@@ -41,10 +41,7 @@ export function ProductCard({ ProductData }: StaticProps) {
       >
         {ProductData?.map((item, index) => {
           return (
-            <SwiperSlide
-              key={index}
-              onClick={() => router.push(`${item.slug}`)}
-            >
+            <SwiperSlide key={index} className={'mb-10'}>
               <Card
                 productIMG={item.productIMG}
                 productname={item.productname}
@@ -52,6 +49,7 @@ export function ProductCard({ ProductData }: StaticProps) {
                 category={item.category}
                 availability={item.availability}
                 location={item.location}
+                onClick={() => router.push(`${item.slug}`)}
               />
             </SwiperSlide>
           )

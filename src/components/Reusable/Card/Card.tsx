@@ -29,7 +29,7 @@ export function Card({
 }: ProductProps) {
   return (
     <div
-      className="mb-10 rounded-sm bg-gray-100 dark:bg-zinc-800 mt-3 cursor-pointer"
+      className="rounded-sm bg-gray-100 dark:bg-zinc-800 mt-3 cursor-pointer"
       onClick={onClick}
     >
       <div className="h-[120px] md:h-[160px] w-full relative">
