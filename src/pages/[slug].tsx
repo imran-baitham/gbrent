@@ -108,8 +108,8 @@ function Index() {
 
                 {/* Product Datails */}
                 <div className="p-3 border dark:border-zinc-800 bg-white dark:bg-zinc-800">
-                  <div className="flex">
-                    <div className="pr-4">
+                  <div className="flex md:block lg:flex gap-x-6 py-2">
+                    <div className="">
                       <h1 className="text-sm md:text-md text-yellow-500 font-bold">
                         AVAILABILITY
                       </h1>
@@ -117,15 +117,15 @@ function Index() {
                         {Product?.availability}
                       </p>
                     </div>
-                    <div className="pr-4">
+                    <div className="">
                       <h1 className="text-sm md:text-md text-yellow-500 font-bold">
-                        DELIVERY
+                        RENT ON
                       </h1>
                       <p className="text-[10px] md:text-[13px] pt-[2px]">
-                        3-5 Days
+                        3 - 5 Days
                       </p>
                     </div>
-                    <div className="pr-4">
+                    <div className="">
                       <h1 className="text-sm md:text-md text-yellow-500 font-bold">
                         REVIEWS
                       </h1>

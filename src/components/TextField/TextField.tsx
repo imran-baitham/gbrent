@@ -10,6 +10,7 @@ export interface TextFieldProps {
   disabled?: boolean
   className?: string
   lg?: boolean
+  sm?: boolean
 }
 
 export function TextField({
@@ -21,6 +22,7 @@ export function TextField({
   full = false,
   disabled = false,
   lg = false,
+  sm = false,
   className = '',
 }: TextFieldProps) {
   /**
@@ -43,7 +45,10 @@ export function TextField({
       {label && (
         <label
           htmlFor={`${id}`}
-          className="block md:text-lg font-[400] pb-[2px]"
+          className={classNames(
+            sm ? 'md:text-md font-[420]' : '',
+            'block pb-[2px]',
+          )}
         >
           {label}
         </label>
@@ -56,10 +61,58 @@ export function TextField({
           `${className}`,
           full ? 'w-full' : '',
           isDisabled ? isDisabled : '',
-          lg ? 'px-5 py-4' : '',
-          'px-3 md:px-4 py-2 md:py-3 outline-none border-[2px] border-yellow-500 focus:border-yellow-600 font-[400] text-lg bg-white dark:bg-zinc-800',
+          lg ? 'px-5 py-4 text-lg' : '',
+          sm ? 'px-2 md:px-3 py-2 md:py-3' : '',
+          'px-2 md:px-3 py-2 md:py-3 outline-none border-[1px] border-yellow-500 focus:border-yellow-600 font-[400] bg-white dark:bg-zinc-800',
         )}
       />
     </div>
+  )
+}
+
+interface TextAreaProps {
+  id?: number
+  label?: string
+  placeholder: string
+  onPress?: () => void
+  full?: boolean
+  className?: string
+  lg?: boolean
+  sm?: boolean
+}
+
+export function TextArea({
+  id,
+  sm,
+  label,
+  placeholder,
+  className,
+}: TextAreaProps) {
+  return (
+    <>
+      {label && (
+        <label
+          htmlFor={`${id}`}
+          className={classNames(
+            sm ? 'md:text-md font-[420]' : '',
+            'block pb-[2px]',
+          )}
+        >
+          {label}
+        </label>
+      )}
+      <textarea
+        rows={10}
+        style={{
+          resize: 'none',
+          width: '98.5%',
+        }}
+        className={classNames(
+          `${className}`,
+          'px-2 md:px-3 py-2 md:py-3 outline-none border-[1px] border-yellow-500 focus:border-yellow-600 font-[400] bg-white dark:bg-zinc-800',
+        )}
+        placeholder={placeholder}
+      />
+    </>
   )
 }

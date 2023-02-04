@@ -42,20 +42,19 @@ export let UserStaticPaths: AccountProps[] = [
   {
     id: 2,
     slug: "myuplaods",
-    name: "myuplaods",
+    name: "My Uplaods",
     icon: "RiFileUploadFill",
   },
   {
     id: 3,
     slug: "settings",
-    name: "settings",
+    name: "Settings",
     icon: "IoMdSettings",
   },
   {
     id: 4,
     slug: "report-problem",
-    name: "report-problem",
+    name: "Report Problem",
     icon: "AiFillFlag",
   },
-  // { id: 5, name: "Sign out", slug: "/", icon: "RiLogoutBoxLine" },
 ];
