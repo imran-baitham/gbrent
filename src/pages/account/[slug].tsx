@@ -159,6 +159,49 @@ function Account() {
                 <h1 className="font-bold text-xl py-2 border-b-2 dark:border-zinc-700 mb-5">
                   Report Problem
                 </h1>
+                <div className="grid lg:grid-cols-3 border dark:border-zinc-700 p-3 mb-5 gap-1">
+                  <form action="##" className="lg:col-span-2">
+                    <div className="grid grid-cols-1">
+                      <TextField
+                        label="Enter Your Name"
+                        inputType="text"
+                        placeholder="UserName"
+                        sm
+                        full
+                      />
+                      <TextField
+                        label="Email Address"
+                        inputType="email"
+                        placeholder="Enter Your Email"
+                        full
+                        sm
+                      />
+                    </div>
+                    <div className="pt-2">
+                      <TextArea
+                        label="Report Problem"
+                        placeholder="..."
+                        sm
+                      />
+                    </div>
+                    <div className="w-full text-right py-5 pr-1.5 md:pr-2.5">
+                      <Button primary>Submit Problem</Button>
+                    </div>
+                  </form>
+                  <div>
+                    <div className="border p-3 dark:border-zinc-700">
+                      <h1 className="font-bold pb-2 text-yellow-500">
+                        Why is it important? 🤔
+                      </h1>
+                      <p className="text-[12px] dark:text-gray-200 text-gray-600">
+                        GBrent is built on trust. Help other people get to know
+                        you. Tell them about the things you like. Share your
+                        favorite brands, books, movies, shows, music, food. And
+                        you will see the results…
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             )}
           </div>
